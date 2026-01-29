@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resources | Gleafink</title>
+  <meta name="description" content="Browse Gleafink resources including blogs, webinars, guides, and news." />
+  <link rel="icon" href="images/gleafink-logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Gleafink home"><img src="images/gleafink-logo.png" alt="Gleafink logo" /></a>
+        <div class="nav-links" role="navigation" aria-label="Site">
+          <a href="products.html">Products</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="resources.html" aria-current="page">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" type="button" data-open-modal="Talk to an Expert">Talk to an Expert</button>
+          <button class="btn btn-primary" type="button" data-open-modal="Request a Demo">Request a Demo</button>
+          <button class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-mobile-toggle>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-drawer" data-mobile-drawer>
+        <a href="products.html">Products</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="resources.html" aria-current="page">Resources</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="drawer-actions">
+          <button class="btn btn-ghost" type="button" data-open-modal="Talk to an Expert">Talk to an Expert</button>
+          <button class="btn btn-primary" type="button" data-open-modal="Request a Demo">Request a Demo</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">Home / Resources</div>
+        <h1>Resources to learn, improve, and scale</h1>
+        <p class="lead">Filter by type and search within our resource library. Content below is sample placeholder material.</p>
+      </div>
+    </section>
+
+    <section class="section" data-resource-filter>
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filters" role="toolbar" aria-label="Resource filters">
+            <button class="chip" type="button" data-type="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-type="blog" aria-pressed="false">Blog</button>
+            <button class="chip" type="button" data-type="webinar" aria-pressed="false">Webinar</button>
+            <button class="chip" type="button" data-type="guide" aria-pressed="false">Guide</button>
+            <button class="chip" type="button" data-type="news" aria-pressed="false">News</button>
+          </div>
+          <div class="assistant-input" style="max-width:420px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 18a8 8 0 1 1 5.293-14.01A8 8 0 0 1 10 18Zm0-2a6 6 0 1 0-3.6-10.8A6 6 0 0 0 10 16Zm9.707 4.293-4.1-4.1 1.414-1.414 4.1 4.1-1.414 1.414Z"/></svg>
+            <input type="search" data-resource-search placeholder="Search resources" aria-label="Search resources" />
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <article class="card tile reveal" data-resource-card data-type="webinar">
+            <div class="meta">WEBINAR</div>
+            <div class="title">Build an integration fabric</div>
+            <p class="desc">Patterns for reliable workflows and APIs across systems.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="blog">
+            <div class="meta">BLOG</div>
+            <div class="title">Modernization: where teams get stuck</div>
+            <p class="desc">Common pitfalls and how to avoid them with secure defaults.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="news" id="news">
+            <div class="meta">NEWS</div>
+            <div class="title">Gleafink launches new governance controls</div>
+            <p class="desc">Built to support audits, policy enforcement, and AI guardrails.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="guide" id="guides">
+            <div class="meta">GUIDE</div>
+            <div class="title">Responsible AI rollout checklist</div>
+            <p class="desc">A practical checklist covering evaluation, monitoring, and compliance.</p>
+          </article>
+
+          <article class="card tile reveal" data-resource-card data-type="blog">
+            <div class="meta">BLOG</div>
+            <div class="title">Observability for integrations</div>
+            <p class="desc">Detect issues earlier with runtime visibility and alerting.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="webinar" id="webinars">
+            <div class="meta">WEBINAR</div>
+            <div class="title">Secure delivery without friction</div>
+            <p class="desc">Policy-as-code patterns your teams will actually adopt.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="guide">
+            <div class="meta">GUIDE</div>
+            <div class="title">Selecting the right modernization path</div>
+            <p class="desc">Refactor vs re-platform vs rebuild, with decision criteria.</p>
+          </article>
+          <article class="card tile reveal" data-resource-card data-type="news">
+            <div class="meta">PRESS</div>
+            <div class="title">Gleafink expands partner ecosystem</div>
+            <p class="desc">New integrations and services accelerate time-to-value.</p>
+          </article>
+        </div>
+
+        <div style="margin-top:18px;" class="cta-band reveal">
+          <h2>Want tailored recommendations?</h2>
+          <p>Tell us your goals and we’ll share the most relevant resources and next steps.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="contact.html">Talk to an Expert</a>
+            <button class="btn btn-secondary" type="button" data-open-modal="Request a Demo">Request a Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="images/gleafink-logo.png" alt="Gleafink logo" /><p>Insights for modernization, integration, and responsible AI.</p></div>
+        <div class="footer-grid" aria-label="Footer">
+          <div class="footer-col"><h4>Products</h4><a href="products.html">Platform</a><a href="products.html#integration">Integration</a><a href="products.html#governance">Governance</a><a href="products.html#observability">Observability</a></div>
+          <div class="footer-col"><h4>Solutions</h4><a href="solutions.html">Modernization</a><a href="solutions.html#data">Data</a><a href="solutions.html#ai">AI</a><a href="solutions.html#security">Security</a></div>
+          <div class="footer-col"><h4>Resources</h4><a href="#">Library</a><a href="#news">News</a><a href="#guides">Guides</a><a href="#webinars">Webinars</a></div>
+          <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><div>© <span data-year></span> Gleafink.</div><div><a href="#">Privacy</a> · <a href="#">Terms</a></div></div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" data-modal-backdrop aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal" role="document">
+      <header>
+        <div><h3 data-modal-title>Request a Demo</h3><div class="help">UI-only placeholder.</div></div>
+        <button class="icon-btn" type="button" data-close-modal aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3 1.4 1.4Z"/></svg>
+        </button>
+      </header>
+      <div class="content">
+        <form class="form" onsubmit="event.preventDefault(); alert('Thanks! (Placeholder)');">
+          <div class="grid-2">
+            <div class="field"><label for="m-name">Full name</label><input id="m-name" required /></div>
+            <div class="field"><label for="m-email">Work email</label><input id="m-email" type="email" required /></div>
+          </div>
+          <div class="field"><label for="m-notes">Notes</label><textarea id="m-notes" rows="4"></textarea></div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-ghost" type="button" data-close-modal>Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
