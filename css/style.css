@@ -1413,7 +1413,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
-  border: "2px solid red";
+  /* border: "2px solid red"; */
 }
 
 .service-icon-green {
@@ -1569,7 +1569,7 @@ textarea:focus {
 /* ===================================== */
 
 .propel-section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-bottom: 0px;
 }
 
