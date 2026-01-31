@@ -3049,3 +3049,113 @@ textarea:focus {
 .metainsights-page .contact-section {
   background: var(--c-surface); /* Light/White */
 }
+
+/* ================================
+   DataSculpt Hero Section
+   ================================ */
+.datasculpt-hero {  
+  padding: 100px 0 120px;
+  text-align: center;
+}
+
+.datasculpt-hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.datasculpt-hero-title {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 32px;
+  color: black;
+  letter-spacing: -0.02em;
+}
+
+.datasculpt-hero-title .highlight-pink {
+  color: var(--c-pink-600);
+}
+
+.datasculpt-hero-description {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(120, 120, 120, 0.85);
+  max-width: 900px;
+  margin: 0 auto 40px;
+  font-weight: 400;
+}
+
+.datasculpt-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary-outlined {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--c-surface);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-secondary-outlined:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-outlined:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.section-one-image{
+  display: flex;
+  justify-content: center;   
+}
+
+.section-one-banner{ 
+  width: 65%;
+  height: 65%; 
+  background-image: contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .datasculpt-hero {
+    padding: 60px 0 80px;
+  }
+  
+  .datasculpt-hero-title {
+    font-size: 42px;
+    margin-bottom: 24px;
+  }
+  
+  .datasculpt-hero-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .datasculpt-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .datasculpt-hero-actions .btn {
+    width: 100%;
+  }
+}

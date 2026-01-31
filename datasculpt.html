@@ -5,14 +5,14 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>MetaInsights | Gleafink Data Discovery Platform</title>
+    <title>DataSculpt | Gleafink Data Pipeline Platform</title>
     <meta name="description"
-        content="MetaInsights transforms metadata into business value with unified data discovery, classification, quality scoring, and lineage tracking." />
+        content="DataSculpt reimagines ETL with AI intelligence built in. Cloud-native data integration platform for building powerful analytics at scale." />
     <link rel="icon" href="images/gleafink-logo.png" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="metainsights-page">
+<body class="datasculpt-page">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" role="banner">
@@ -61,8 +61,36 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="datasculpt-hero hero">
+            <div class="container">
+                <div class="datasculpt-hero-content">
+                    <h1 class="datasculpt-hero-title">
+                        ETL <span class="highlight-pink">reimagined.</span><br>
+                        AI <span class="highlight-pink">intelligence</span> built in.
+                    </h1>
+                    <p class="datasculpt-hero-description">
+                        Datasculpt pioneered cloud-native ELT and now we're harnessing AI to lead the way again.
+                        Our unified platform is the next step in data integration, with AI that enhances data productivity, delivering powerful
+                        analytics at scale and speed.
+                    </p>
+                    <div class="datasculpt-hero-actions">
+                        <button class="btn btn-primary" type="button">Open DataSculpt</button>
+                        <a class="btn btn-secondary-outlined" href="contact.html">
+                            Contact us
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="section-one-image" >
+                <img class="section-one-banner" src="./images/datascuplt-sec-one-image.png" alt="">
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">
@@ -113,6 +141,51 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal-backdrop" data-modal-backdrop aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal" role="document">
+            <header>
+                <div>
+                    <h3 data-modal-title>Request a Demo</h3>
+                    <div class="help">This form is UI-only in the static site. Connect to your backend/CRM later.</div>
+                </div>
+                <button class="icon-btn" type="button" data-close-modal aria-label="Close dialog">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3 1.4 1.4Z" />
+                    </svg>
+                </button>
+            </header>
+            <div class="content">
+                <form class="form" onsubmit="event.preventDefault(); alert('Thanks! (Placeholder)');">
+                    <div class="grid-2">
+                        <div class="field"><label for="m-name">Full name</label><input id="m-name" required /></div>
+                        <div class="field"><label for="m-email">Work email</label><input id="m-email" type="email"
+                                required /></div>
+                    </div>
+                    <div class="grid-2">
+                        <div class="field"><label for="m-company">Company</label><input id="m-company" required /></div>
+                        <div class="field"><label for="m-interest">Interested in</label>
+                            <select id="m-interest" required>
+                                <option value="">Select…</option>
+                                <option>Modernization</option>
+                                <option>Integration</option>
+                                <option>AI Enablement</option>
+                                <option>Governance & Security</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field"><label for="m-notes">Notes</label><textarea id="m-notes" rows="4"
+                            placeholder="Tell us what you're trying to accomplish…"></textarea></div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-ghost" type="button" data-close-modal>Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/main.js"></script>
