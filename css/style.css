@@ -2130,13 +2130,13 @@ textarea:focus {
 
 /* Integrations Section */
 .integrations-section {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .integrations-header {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 .integrations-title {
@@ -2154,7 +2154,6 @@ textarea:focus {
   font-weight: 400;
   line-height: 1.6;
   color: var(--c-muted);
-  margin: 0;
 }
 
 .integrations-layout {
@@ -2270,7 +2269,7 @@ textarea:focus {
 .integrations-overlay {
   width: 100%;
   max-width: 1400px;
-  margin: -80px auto 0;
+  margin: 10px auto;
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -3125,6 +3124,7 @@ textarea:focus {
 .section-one-image{
   display: flex;
   justify-content: center;   
+  margin-top: 50px;
 }
 
 .section-one-banner{ 
