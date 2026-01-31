@@ -1627,8 +1627,8 @@ textarea:focus {
 
 .mockup-container {
   width: 100%;
-  max-width: 1100px;
-  margin-top: 40px;
+  max-width: 1100px; 
+  margin-top: 10px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -1764,7 +1764,7 @@ textarea:focus {
 
 /* Metadata Value Section */
 .metadata-value-section {
-  padding: 0px 20px 20px 0px;
+  padding: 50px 0px;
   background: var(--c-surface);
 }
 
@@ -3018,4 +3018,34 @@ textarea:focus {
     padding: 14px 28px;
     font-size: 15px;
   }
+}
+
+/* MetaInsights Page - Alternating Section Backgrounds */
+/* Apply light (white) background to even sections starting from section 2 */
+.metainsights-page .stats-section {
+  background: var(--c-surface); /* Light/White */
+}
+
+.metainsights-page .metadata-value-section {
+  background: var(--c-surface-2); /* Light Blue */
+}
+
+.metainsights-page .features-section {
+  background: var(--c-surface); /* Light/White */
+}
+
+.metainsights-page .integrations-section {
+  background: var(--c-surface-2); /* Light Blue */
+}
+
+.metainsights-page .tryout-section {
+  background: var(--c-surface); /* Light/White */
+}
+
+.metainsights-page .blogs-section {
+  background: var(--c-surface-2); /* Light Blue */
+}
+
+.metainsights-page .contact-section {
+  background: var(--c-surface); /* Light/White */
 }
