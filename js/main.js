@@ -152,4 +152,33 @@
   // Footer year
   const yearEl = document.querySelector('[data-year]');
   if(yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  // Product Tabs
+  const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
+  const tabContents = Array.from(document.querySelectorAll('.tab-content'));
+
+  if(tabButtons.length > 0 && tabContents.length > 0){
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked button
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        
+        // Show corresponding content
+        const targetContent = document.querySelector(`[data-content="${targetTab}"]`);
+        if(targetContent){
+          targetContent.classList.add('active');
+        }
+      });
+    });
+  }
 })();
