@@ -2414,3 +2414,200 @@ textarea:focus {
     padding: 12px;
   }
 }
+
+/* Try Out MetaInsights Section */
+.tryout-section {
+  padding-top: 20px; 
+  background: var(--c-surface);
+}
+
+.tryout-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--c-ink);
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.text-metainsights {
+  color: var(--c-green-600);
+  font-weight: 600;
+}
+
+.tryout-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tryout-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 10px;
+  background: var(--c-surface);
+  border-radius: var(--radius-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tryout-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.tryout-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  transition: transform 0.3s ease;
+}
+
+.tryout-card:hover .tryout-icon {
+  transform: scale(1.05);
+}
+
+.deploy-icon {
+  background: var(--c-green-600);
+  color: #fff;
+}
+
+.saas-icon {
+  background: var(--c-green-600);
+  color: #fff;
+}
+
+.tryout-card-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--c-ink);
+  margin: 0 0 16px 0;
+}
+
+.tryout-card-description {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--c-muted);
+  margin: 0 0 32px 0;
+}
+
+.btn-tryout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.deploy-btn {
+  background: var(--c-blue-900);
+  color: #fff;
+}
+
+.deploy-btn:hover {
+  background: var(--c-blue-800);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(var(--c-blue-900-rgb), 0.3);
+}
+
+.saas-btn {
+  background: var(--c-blue-900);
+  color: #fff;
+}
+
+.saas-btn:hover {
+  background: var(--c-blue-800);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(var(--c-blue-900-rgb), 0.3);
+}
+
+/* Responsive Design for Try Out Section */
+@media (max-width: 960px) {
+  .tryout-section {
+    padding: 80px 20px;
+  }
+
+  .tryout-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .tryout-cards {
+    gap: 40px;
+  }
+
+  .tryout-card {
+    padding: 50px 30px;
+  }
+
+  .tryout-card-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .tryout-section {
+    padding: 60px 20px;
+  }
+
+  .tryout-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .tryout-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tryout-card {
+    padding: 40px 24px;
+  }
+
+  .tryout-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+
+  .tryout-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tryout-card-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .tryout-card-description {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .btn-tryout {
+    padding: 14px 32px;
+    font-size: 15px;
+    max-width: 100%;
+  }
+}
