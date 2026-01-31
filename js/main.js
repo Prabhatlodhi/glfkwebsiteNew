@@ -181,4 +181,29 @@
       });
     });
   }
+
+  // Features Section Navigation (metaInsights.html)
+  const featureNavItems = Array.from(document.querySelectorAll('.feature-nav-item'));
+  const featurePanels = Array.from(document.querySelectorAll('.feature-panel'));
+
+  if(featureNavItems.length > 0 && featurePanels.length > 0){
+    featureNavItems.forEach(navItem => {
+      navItem.addEventListener('click', () => {
+        const targetFeature = navItem.getAttribute('data-feature');
+        
+        // Remove active class from all nav items and panels
+        featureNavItems.forEach(item => item.classList.remove('active'));
+        featurePanels.forEach(panel => panel.classList.remove('active'));
+        
+        // Add active class to clicked nav item
+        navItem.classList.add('active');
+        
+        // Show corresponding panel
+        const targetPanel = document.querySelector(`[data-feature-panel="${targetFeature}"]`);
+        if(targetPanel){
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  }
 })();
