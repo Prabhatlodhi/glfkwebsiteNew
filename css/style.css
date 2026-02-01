@@ -2881,14 +2881,19 @@ textarea:focus {
   background: var(--c-surface-2); 
 }
 
+.blogs-section .section-header {
+  margin-bottom: 60px;
+}
+
 .blogs-title {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 400;
   line-height: 1.2;
-  color: var(--c-ink);
-  margin: 0 0 60px 0;
+  color: var(--c-blue-900);
+  margin: 0;
   text-align: left;
+  letter-spacing: -0.02em;
 }
 
 .blogs-grid {
@@ -3043,6 +3048,10 @@ textarea:focus {
   background: var(--c-surface);
 }
 
+.contact-section .section-header {
+  margin-bottom: 40px;
+}
+
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3063,8 +3072,9 @@ textarea:focus {
   font-size: 48px;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--c-ink);
-  margin: 0 0 80px 0;
+  color: var(--c-blue-900);
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 
 .contact-journey-title {
