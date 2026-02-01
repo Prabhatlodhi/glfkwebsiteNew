@@ -545,6 +545,11 @@ h1 {
   margin-bottom: 18px;
 }
 
+.section-header-services {
+  padding-left: 180px;
+  padding-bottom: 20px;
+}
+
 .section-title {
   margin: 0;
   font-size: 28px;
@@ -575,7 +580,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0px auto;
 }
 
