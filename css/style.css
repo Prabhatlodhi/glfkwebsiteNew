@@ -570,6 +570,52 @@ h1 {
   gap: 16px;
 }
 
+/* Services grid - ensures equal height cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.services-grid > a {
+  display: flex;
+  height: 100%;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid rgba(228, 234, 242, .95);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 10px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .10);
+  border-color: rgba(var(--c-blue-600-rgb), .28);
+}
+
+.service-card h3 {
+  margin: 10px 0 8px;
+  color: var(--c-blue-900);
+  font-size: 16px;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--c-muted);
+  font-size: 14px;
+  flex-grow: 1;
+}
+
 .grid-6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1511,6 +1557,10 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-top {
     grid-template-columns: 1fr;
   }
@@ -1566,6 +1616,10 @@ textarea:focus {
   }
 
   .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 
