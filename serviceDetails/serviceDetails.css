@@ -1,8 +1,7 @@
 /* Service Details Page CSS */
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Color Variables */
 :root {
@@ -58,7 +57,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   color: var(--c-text);
   background: var(--c-surface);
   line-height: 1.55;
@@ -202,7 +201,7 @@ body {
 }
 
 .service-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.15;
@@ -251,7 +250,7 @@ body {
 
 /* Section Title */
 .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
@@ -344,7 +343,7 @@ body {
 }
 
 .step-number {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: var(--c-green-600);
@@ -471,7 +470,7 @@ body {
 }
 
 .service-cta h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 36px;
   font-weight: 700;
   margin: 0 0 16px;
