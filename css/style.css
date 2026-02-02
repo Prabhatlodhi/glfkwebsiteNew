@@ -470,10 +470,9 @@ h1 {
 }
 
 .lead {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: var(--c-muted);
-  padding: 0 100px;
 }
 
 .hero-actions {
@@ -1358,6 +1357,17 @@ a .card {
 .breadcrumb {
   font-size: 13px;
   color: var(--c-muted);
+  margin-bottom: 12px;
+}
+
+.breadcrumb a {
+  color: var(--c-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--c-blue-900);
 }
 
 /* Forms */
