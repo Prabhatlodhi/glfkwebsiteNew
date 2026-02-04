@@ -697,6 +697,7 @@ h1 {
   gap: 10px;
   max-width: 1150px;
   margin: 0px auto;
+  padding: 0 20px;
 }
 
 @media (max-width: 1200px) {
@@ -723,6 +724,12 @@ h1 {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    padding: 0 16px;
   }
 }
 
