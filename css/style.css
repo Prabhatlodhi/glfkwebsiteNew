@@ -366,14 +366,19 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-button-group .btn {
+  max-width: 220px;
+}
+
 @media (max-width: 480px) {
   .hero-button-group {
     flex-direction: column;
-    width: 100%;
+    width: 85%;
   }
 
   .hero-button-group .btn {
     width: 100%;
+    max-width: 85%;
   }
 }
 
