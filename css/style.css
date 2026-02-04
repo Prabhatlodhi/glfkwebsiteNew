@@ -175,6 +175,18 @@ a {
   gap: 10px;
 }
 
+.nav-actions .btn {
+  white-space: nowrap;
+}
+
+.nav-actions .btn:not(.mobile-toggle) {
+  display: none;
+}
+
+.nav-actions .btn:not(.mobile-toggle) {
+  display: none;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -258,6 +270,15 @@ a {
   display: none;
   border-top: 1px solid rgba(228, 234, 242, .8);
   padding: 12px 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.mobile-drawer.open {
+  display: block;
+  max-height: 1000px;
+  padding: 12px 0 18px;
 }
 
 .mobile-drawer a {
@@ -265,17 +286,21 @@ a {
   padding: 10px 12px;
   border-radius: 12px;
   font-weight: 700;
+  font-size: 14px;
+  transition: background 0.2s ease;
 }
 
 .mobile-drawer a:hover {
   background: rgba(var(--c-blue-600-rgb), .07);
 }
 
+.mobile-drawer a[aria-current="page"] {
+  background: rgba(var(--c-green-600-rgb), .10);
+  color: var(--c-blue-900);
+}
+
 .mobile-drawer .drawer-actions {
-  display: flex;
-  gap: 10px;
-  padding: 10px 12px 0;
-  flex-wrap: wrap;
+  display: none;
 }
 
 /* Hero */
@@ -1585,23 +1610,111 @@ textarea:focus {
   }
 }
 
+/* Responsive Header Styles */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+
+  .brand img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+
+  .brand {
+    min-width: 180px;
+  }
+
+  .brand img {
+    width: 130px;
+  }
+
+  .nav-actions .btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 760px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
   .nav-links {
     display: none;
   }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
 
   .mobile-toggle {
     display: inline-flex;
   }
 
-  .mobile-drawer.open {
-    display: block;
-  }
-
   .brand {
     min-width: unset;
+    flex: 0 0 auto;
   }
 
+  .brand img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .brand img {
+    width: 100px;
+  }
+
+  .mobile-drawer {
+    padding: 10px 0 16px;
+  }
+
+  .mobile-drawer a {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .mobile-drawer .drawer-actions {
+    flex-direction: column;
+    padding: 10px 12px 0;
+  }
+
+  .mobile-drawer .drawer-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-actions .btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 760px) {
   .hero-secondary-section {
     padding: 60px 0;
   }
