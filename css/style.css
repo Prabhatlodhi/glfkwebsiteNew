@@ -550,9 +550,10 @@ h1 {
 
 .section-title {
   margin: 0;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: -0.02em;
   color: var(--c-blue-900);
+  font-weight: 600;
 }
 
 .section-sub {
@@ -1825,8 +1826,8 @@ textarea:focus {
 }
 
 .tab-text h3 {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   color: var(--c-blue-900);
   margin: 0 0 16px;
   line-height: 1.3;
@@ -1867,7 +1868,7 @@ textarea:focus {
   }
 
   .tab-text h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .tab-text p {
@@ -1886,7 +1887,7 @@ textarea:focus {
 
 .text-center {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0px;
 }
 
 .text-center h1 {
@@ -2414,11 +2415,12 @@ textarea:focus {
 
 .integrations-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--c-ink);
+  color: var(--c-blue-900);
   margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
 }
 
 .integrations-description {
@@ -2574,7 +2576,7 @@ textarea:focus {
   }
 
   .integrations-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
@@ -2588,7 +2590,7 @@ textarea:focus {
   }
 
   .integrations-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .integrations-layout {
@@ -2896,8 +2898,8 @@ textarea:focus {
 
 .blogs-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 600;
   line-height: 1.2;
   color: var(--c-blue-900);
   margin: 0;
@@ -2953,7 +2955,7 @@ textarea:focus {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--c-ink);
+  color: var(--c-blue-900);
   margin: 0 0 16px 0;
 }
 
@@ -2987,7 +2989,7 @@ textarea:focus {
   }
 
   .blogs-title {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 50px;
   }
 
@@ -3015,7 +3017,7 @@ textarea:focus {
   }
 
   .blogs-title {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 40px;
   }
 
@@ -3078,7 +3080,7 @@ textarea:focus {
 
 .contact-main-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.2;
   color: var(--c-blue-900);
@@ -3088,10 +3090,10 @@ textarea:focus {
 
 .contact-journey-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--c-ink);
+  color: var(--c-blue-900);
   margin: 0 0 40px 0;
 }
 
@@ -3215,12 +3217,12 @@ textarea:focus {
   }
 
   .contact-main-title {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 60px;
   }
 
   .contact-journey-title {
-    font-size: 32px;
+    font-size: 22px;
   }
 }
 
@@ -3235,12 +3237,12 @@ textarea:focus {
   }
 
   .contact-main-title {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 50px;
   }
 
   .contact-journey-title {
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 32px;
   }
 
@@ -3259,12 +3261,12 @@ textarea:focus {
   }
 
   .contact-main-title {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 40px;
   }
 
   .contact-journey-title {
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 28px;
   }
 
@@ -3350,7 +3352,7 @@ textarea:focus {
   font-weight: 700;
   line-height: 1.15;
   margin: 0 0 32px;
-  color: black;
+  color: var(--c-blue-900);
   letter-spacing: -0.02em;
 }
 
@@ -3460,12 +3462,12 @@ textarea:focus {
 }
 
 .data-productivity-title {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 600;
   line-height: 1.2;
-  color: var(--c-ink);
+  color: var(--c-blue-900);
   margin: 0 0 16px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .data-productivity-subtitle {
@@ -3491,8 +3493,8 @@ textarea:focus {
 
 .productivity-card-title {
   font-size: 24px;
-  font-weight: 700;
-  color: var(--c-ink);
+  font-weight: 600;
+  color: var(--c-blue-900);
   margin: 0;
   letter-spacing: -0.01em;
 }
@@ -3506,7 +3508,7 @@ textarea:focus {
 .productivity-card-heading {
   font-size: 18px;
   font-weight: 600;
-  color: var(--c-text);
+  color: var(--c-blue-900);
   margin: 0;
   line-height: 1.4;
 }
