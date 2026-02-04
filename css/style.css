@@ -1893,6 +1893,11 @@ textarea:focus {
 .text-center h1 {
   max-width: 900px;
   margin: 0 auto 20px;
+  line-height: 1.2;
+}
+
+.leading-text {
+  line-height: 1.2;
 }
 
 .text-green {
