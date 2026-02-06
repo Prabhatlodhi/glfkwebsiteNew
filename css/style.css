@@ -626,8 +626,8 @@ h1 {
 
 @media (min-width: 981px) {
   .section {
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
