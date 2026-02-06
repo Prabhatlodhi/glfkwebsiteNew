@@ -272,6 +272,8 @@ body {
   color: var(--c-blue-900);
   margin: 0 0 40px;
   letter-spacing: -0.02em;
+  text-align: center;
+  padding: 10px 0px;
 }
 
 /* Benefits Section */
