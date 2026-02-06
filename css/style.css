@@ -1989,8 +1989,7 @@ textarea:focus {
   }
 
   .section {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 15px 0px;
   }
 
   /* Section header buttons on very small screens */
@@ -3396,10 +3395,6 @@ textarea:focus {
 .blogs-section {
   padding: 40px 0px; 
   background: var(--c-surface-2); 
-}
-
-.blogs-section .section-header {
-  margin-bottom: 60px;
 }
 
 .blogs-title {
