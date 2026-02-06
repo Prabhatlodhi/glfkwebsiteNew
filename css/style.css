@@ -663,7 +663,6 @@ h1 {
 }
 
 .section-title {
-  margin: 0;
   font-size: clamp(28px, 3.5vw, 36px);
   letter-spacing: -0.02em;
   color: var(--c-blue-900);

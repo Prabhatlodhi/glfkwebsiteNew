@@ -265,15 +265,10 @@ body {
 
 /* Section Title */
 .section-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--c-blue-900);
-  margin: 0 0 40px;
-  letter-spacing: -0.02em;
-  text-align: center;
-  padding: 10px 0px;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700; 
+    text-align: center;
+    color: var(--c-blue-900); 
 }
 
 /* Benefits Section */
@@ -684,7 +679,7 @@ body {
 
   .section-title {
     font-size: 28px;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
 
   .benefits-grid,

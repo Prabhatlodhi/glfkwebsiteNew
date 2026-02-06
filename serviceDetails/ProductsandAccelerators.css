@@ -60,14 +60,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Section Titles */
-.section-title {
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    font-weight: 700;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: var(--c-blue-900);
-}
+ 
 
 .section-description {
     text-align: center;
@@ -79,14 +72,13 @@
 
 /* Benefits Section */
 .benefits-section {
-    margin-bottom: 5rem;
+    margin-bottom: 100px;
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
 }
 
 .benefit-card {
@@ -203,8 +195,8 @@
 .approach-process {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
+    
 }
 
 .process-step {
@@ -260,7 +252,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+     
 }
 
 .offering-card {
@@ -433,8 +425,8 @@
 .approach-diagram {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
+    
 }
 
 .diagram-card {
@@ -480,8 +472,8 @@
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
+    
 }
 
 .story-card {
@@ -530,8 +522,8 @@
 .platforms-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
+    
 }
 
 .platform-card {
@@ -574,7 +566,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+     
 }
 
 .pillar-card {
@@ -649,8 +641,7 @@
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
 }
 
 .metric-card {
@@ -768,8 +759,8 @@
 .insights-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem; 
+    
 }
 
 .insight-card {
