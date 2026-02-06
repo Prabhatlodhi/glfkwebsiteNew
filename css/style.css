@@ -312,9 +312,7 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  padding: 60px 0 40px;
-  
-  /* background: linear-gradient(135deg, #E8EEF7 0%, #F4F6FA 50%, #E8EEF7 100%); */
+  padding: 20px 0px;
   background:
     radial-gradient(1000px 480px at 18% 10%, rgba(var(--c-lime-300-rgb), .22), transparent 60%),
     radial-gradient(900px 520px at 85% 18%, rgba(var(--c-pink-600-rgb), .12), transparent 56%),
@@ -324,7 +322,7 @@ a {
 
 @media (min-width: 981px) {
   .hero {
-    padding: 100px 0 100px;
+    padding: 25px 0 20px;
   }
 }
 
