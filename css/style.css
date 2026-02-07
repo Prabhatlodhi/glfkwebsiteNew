@@ -666,6 +666,7 @@ h1 {
   letter-spacing: -0.02em;
   color: var(--c-blue-900);
   font-weight: 600;
+  margin: 10px 0px;
 }
 
 .section-sub {
@@ -2103,7 +2104,6 @@ textarea:focus {
 .product-tabs {
   display: flex;
   gap: 8px;
-  margin: 32px 0 24px;
   flex-wrap: wrap;
   border-bottom: 2px solid var(--c-border);
   padding-bottom: 8px;
