@@ -1513,7 +1513,7 @@ a .card {
 
 /* Page header */
 .page-hero {
-  padding: 30px 13%;
+  padding: 30px 12%;
   max-width: 1520px;
   background:
     radial-gradient(700px 320px at 20% 20%, rgba(var(--c-lime-300-rgb), .20), transparent 60%),
