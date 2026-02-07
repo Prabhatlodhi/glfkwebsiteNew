@@ -620,7 +620,7 @@ h1 {
 
 /* Sections */
 .section {
-  padding: 20px 0px;
+  padding: 35px 0px;
 }
 
 @media (min-width: 981px) {
@@ -1516,6 +1516,7 @@ a .card {
 /* Page header */
 .page-hero {
   padding: 30px 13%;
+  max-width: 1500px;
   background:
     radial-gradient(700px 320px at 20% 20%, rgba(var(--c-lime-300-rgb), .20), transparent 60%),
     radial-gradient(700px 320px at 80% 20%, rgba(var(--c-orange-400-rgb), .14), transparent 60%),
@@ -1689,6 +1690,12 @@ textarea:focus {
 .reveal.in {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1400px) {
+  .page-hero {
+  padding: 30px 1%;
+  }
 }
 
 /* Responsive */
