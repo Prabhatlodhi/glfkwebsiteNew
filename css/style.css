@@ -632,8 +632,6 @@ h1 {
 
 .section.alt {
   background: var(--c-surface-2);
-  border-top: 1px solid rgba(228, 234, 242, .85);
-  border-bottom: 1px solid rgba(228, 234, 242, .85);
 }
 
 .section-header {
@@ -1516,7 +1514,7 @@ a .card {
 /* Page header */
 .page-hero {
   padding: 30px 13%;
-  max-width: 1500px;
+  max-width: 1520px;
   background:
     radial-gradient(700px 320px at 20% 20%, rgba(var(--c-lime-300-rgb), .20), transparent 60%),
     radial-gradient(700px 320px at 80% 20%, rgba(var(--c-orange-400-rgb), .14), transparent 60%),
