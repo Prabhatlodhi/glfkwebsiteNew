@@ -1515,7 +1515,7 @@ a .card {
 
 /* Page header */
 .page-hero {
-  padding: 44px 0 26px;
+  padding: 30px 13%;
   background:
     radial-gradient(700px 320px at 20% 20%, rgba(var(--c-lime-300-rgb), .20), transparent 60%),
     radial-gradient(700px 320px at 80% 20%, rgba(var(--c-orange-400-rgb), .14), transparent 60%),
