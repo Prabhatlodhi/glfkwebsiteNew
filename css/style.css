@@ -2341,7 +2341,7 @@ textarea:focus {
 }
 
 .text-center h1 {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 20px;
   line-height: 1.2;
 }
