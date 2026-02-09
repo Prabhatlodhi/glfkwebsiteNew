@@ -1523,6 +1523,19 @@ a .card {
 
 .page-hero h1 {
   font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 700;
+}
+
+/* Home page: match all headings to services page h1 font-weight */
+.home-page .hero-text-section h1,
+.home-page .section-title,
+.home-page .value-card-item h3,
+.home-page .service-card h3,
+.home-page .tab-text h3,
+.home-page .blog-card-title,
+.home-page .contact-journey-title,
+.home-page .cta-band h2 {
+  font-weight: 700;
 }
 
 .breadcrumb {
