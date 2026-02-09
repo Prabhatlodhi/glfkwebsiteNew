@@ -1521,6 +1521,11 @@ a .card {
 .page-hero h1 {
   font-size: clamp(30px, 3.4vw, 44px);
   font-weight: 700;
+  text-align: center;
+}
+
+.page-hero .lead {
+  text-align: center;
 }
 
 /* Home page: match all headings to services page h1 font-weight */
