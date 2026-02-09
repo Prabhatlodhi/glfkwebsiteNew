@@ -222,6 +222,11 @@ body {
   letter-spacing: -0.02em;
 }
 
+.service-hero .service-title,
+.service-hero .lead {
+  text-align: center;
+}
+
 .service-subtitle {
   font-size: 18px;
   line-height: 1.6;
