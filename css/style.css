@@ -42,8 +42,11 @@
   /* medium gray similar to logo tagline */
 
   --c-surface: #FFFFFF;
-  --c-surface-2: #F5F7FB;
+  --c-surface-2: #E7ECF3;
   --c-border: #E4EAF2;
+
+  /* Hero / page background (Figma) – use across app */
+  --bg-hero: linear-gradient(135deg, #F7F9FC 0%, #E7ECF3 50%, #E0E6EF 100%);
 
   --shadow-sm: 0 4px 14px rgba(0, 0, 0, .08);
   --shadow-md: 0 14px 50px rgba(0, 0, 0, .12);
@@ -312,11 +315,7 @@ a {
 .hero {
   position: relative;
   padding: 20px 0px;
-  background:
-    radial-gradient(1000px 480px at 18% 10%, rgba(var(--c-lime-300-rgb), .22), transparent 60%),
-    radial-gradient(900px 520px at 85% 18%, rgba(var(--c-pink-600-rgb), .12), transparent 56%),
-    radial-gradient(900px 560px at 72% 90%, rgba(var(--c-orange-400-rgb), .16), transparent 55%),
-    linear-gradient(180deg, rgba(var(--c-blue-900-rgb), .02), rgba(var(--c-blue-900-rgb), 0));
+  background: var(--bg-hero);
 }
 
 @media (min-width: 981px) {
@@ -404,7 +403,7 @@ a {
 /* Hero Secondary Section */
 .hero-secondary-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #E8EEF7 0%, #F4F6FA 50%, #E8EEF7 100%);
+  background: var(--bg-hero);
 }
 
 .secondary-intro {
@@ -1514,10 +1513,7 @@ a .card {
 .page-hero {
   padding: 30px 12%;
   max-width: 1520px;
-  background:
-    radial-gradient(700px 320px at 20% 20%, rgba(var(--c-lime-300-rgb), .20), transparent 60%),
-    radial-gradient(700px 320px at 80% 20%, rgba(var(--c-orange-400-rgb), .14), transparent 60%),
-    linear-gradient(180deg, rgba(var(--c-blue-900-rgb), .02), transparent);
+  background: var(--bg-hero);
   border-bottom: 1px solid rgba(228, 234, 242, .9);
 }
 
