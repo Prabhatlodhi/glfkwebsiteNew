@@ -620,13 +620,13 @@ h1 {
 
 /* Sections */
 .section {
-  padding: 35px 0px;
+  padding: 60px 0px;
 }
 
 @media (min-width: 981px) {
   .section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
 }
 
@@ -2016,6 +2016,11 @@ textarea:focus {
     width: auto;
     min-width: auto;
   }
+}
+
+/* Services Page — alternating hero gradient for .section.alt */
+.services-page .section.alt {
+  background: var(--bg-hero-to-white-to-white);
 }
 
 /* Services Page Styles */
