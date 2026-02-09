@@ -46,7 +46,9 @@
   --c-border: #E4EAF2;
 
   /* Hero / page background (Figma) – use across app */
-  --bg-hero: linear-gradient(135deg, #F7F9FC 0%, #E7ECF3 50%, #E0E6EF 100%);
+  --bg-hero-to-white: linear-gradient(135deg, #F7F9FC 0%, #E7ECF3 50%, #E0E6EF 100%);
+  /* Neeche aate hue white mein smooth merge */
+  --bg-hero-to-white-to-white: linear-gradient(180deg, #F7F9FC 0%, #E7ECF3 15%, #E0E6EF 30%, #E8ECF2 50%, #F2F5F8 70%, #FAFBFD 88%, #FFFFFF 100%);
 
   --shadow-sm: 0 4px 14px rgba(0, 0, 0, .08);
   --shadow-md: 0 14px 50px rgba(0, 0, 0, .12);
@@ -315,7 +317,7 @@ a {
 .hero {
   position: relative;
   padding: 20px 0px;
-  background: var(--bg-hero);
+  background: var(--bg-hero-to-white-to-white);
 }
 
 @media (min-width: 981px) {
@@ -403,7 +405,7 @@ a {
 /* Hero Secondary Section */
 .hero-secondary-section {
   padding: 80px 0;
-  background: var(--bg-hero);
+  background: var(--bg-hero-to-white);
 }
 
 .secondary-intro {
@@ -1513,8 +1515,7 @@ a .card {
 .page-hero {
   padding: 30px 12%;
   max-width: 1520px;
-  background: var(--bg-hero);
-  border-bottom: 1px solid rgba(228, 234, 242, .9);
+  background: var(--bg-hero-to-white-to-white);
 }
 
 .page-hero h1 {
