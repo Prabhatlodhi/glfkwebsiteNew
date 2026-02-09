@@ -2909,6 +2909,7 @@ textarea:focus {
   font-weight: 400;
   line-height: 1.6;
   color: var(--c-muted);
+  text-align: left;
 }
 
 .integrations-layout {
