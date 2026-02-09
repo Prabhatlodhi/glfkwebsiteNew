@@ -131,9 +131,9 @@
 }
 
 .approach-content {
-    max-width: 900px;
-    margin: 0 auto 3rem;
-    text-align: center;
+    max-width: 1200px;
+    /* margin: 0 auto 3rem; */
+    text-align: left;
 }
 
 .approach-content h3 {

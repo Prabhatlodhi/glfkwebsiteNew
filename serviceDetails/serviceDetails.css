@@ -267,7 +267,7 @@ body {
 .section-title {
     font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 700; 
-    text-align: center;
+    text-align: left;
     color: var(--c-blue-900); 
 }
 
@@ -471,7 +471,7 @@ body {
 
 /* CTA Section */
 .service-cta {
-  text-align: center;
+  text-align: left;
   padding: 60px 40px;
   background: radial-gradient(600px 240px at 10% 30%, rgba(var(--c-lime-300-rgb), .30), transparent 60%),
     radial-gradient(600px 240px at 80% 0%, rgba(var(--c-orange-400-rgb), .18), transparent 60%),
