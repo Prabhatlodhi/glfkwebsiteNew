@@ -2274,6 +2274,7 @@ textarea:focus {
 .propel-section {
   /* border: 1px solid red; */
   padding-bottom: 0px;
+  background: var(--bg-hero-to-white-to-white) !important;
 }
 
 @media (max-width: 768px) {
