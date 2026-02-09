@@ -3416,7 +3416,7 @@ textarea:focus {
 /* Blogs Section */
 .blogs-section {
   padding: 40px 0px; 
-  background: var(--c-surface-2); 
+  background: var(--c-surface); 
 }
 
 .blogs-title {
