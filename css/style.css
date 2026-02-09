@@ -720,7 +720,7 @@ h1 {
 
 @media (max-width: 480px) {
   .services-grid {
-    padding: 0 16px;
+    padding: 0 2px;
   }
 }
 
