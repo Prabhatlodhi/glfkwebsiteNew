@@ -2325,6 +2325,11 @@ textarea:focus {
   box-shadow: none;
 }
 
+.service-card-selected {
+  border: 1px solid rgba(var(--c-blue-600-rgb), 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(var(--c-blue-600-rgb), 0.12);
+}
+
 #services-cards-grid .service-card:not(.service-card-disabled) {
   cursor: pointer;
 }

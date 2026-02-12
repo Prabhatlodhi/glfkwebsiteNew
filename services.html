@@ -446,8 +446,10 @@
         cards.forEach(function (card) {
           if (card.getAttribute('data-service-card') === activeCardId) {
             card.classList.remove('service-card-disabled');
+            card.classList.add('service-card-selected');
           } else {
             card.classList.add('service-card-disabled');
+            card.classList.remove('service-card-selected');
           }
         });
 
@@ -472,8 +474,10 @@
         allCards.forEach(function (card) {
           if (card.getAttribute('data-service-card') === activeCardId) {
             card.classList.remove('service-card-disabled');
+            card.classList.add('service-card-selected');
           } else {
             card.classList.add('service-card-disabled');
+            card.classList.remove('service-card-selected');
           }
         });
         serviceSections.forEach(function (section) {
