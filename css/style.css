@@ -620,13 +620,13 @@ h1 {
 
 /* Sections */
 .section {
-  padding: 60px 0px;
+  padding: 70px 0px;
 }
 
 @media (min-width: 981px) {
   .section {
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 
@@ -2318,6 +2318,10 @@ textarea:focus {
 .service-card-disabled:hover {
   transform: none;
   box-shadow: none;
+}
+
+#services-cards-grid .service-card:not(.service-card-disabled) {
+  cursor: pointer;
 }
 
 .icon-placeholder {

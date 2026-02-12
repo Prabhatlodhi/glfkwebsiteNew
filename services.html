@@ -55,7 +55,7 @@
       </div>
 
       <div class="services-grid" id="services-cards-grid">
-        <article class="service-card reveal" data-service-card="advisory">
+        <article class="service-card reveal" data-service-card="advisory" data-scroll-target="#advisory" role="button" tabindex="0">
           <div class="service-icon  "> 
             <img  src="./images/bulb-serv.png" alt="">
           </div>
@@ -64,7 +64,7 @@
           <a href="serviceDetails/DataStrategy.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal" data-service-card="products">
+        <article class="service-card reveal" data-service-card="products" data-scroll-target="#accelerators" role="button" tabindex="0">
           <div class="service-icon  ">
             <img   src="./images/cube-box.png" alt="">
           </div>
@@ -73,7 +73,7 @@
           <a href="serviceDetails/ProductsandAccelerators.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal" data-service-card="technology">
+        <article class="service-card reveal" data-service-card="technology" data-scroll-target="#tech-consulting" role="button" tabindex="0">
           <div class="service-icon  ">
             <img   src="./images/eos-icons_neural-network.png" alt="">
           </div>
@@ -82,7 +82,7 @@
           <a href="serviceDetails/GenerativeAI.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal" data-service-card="support">
+        <article class="service-card reveal" data-service-card="support" data-scroll-target="#support" role="button" tabindex="0">
           <div class="service-icon  ">
             <img   src="./images/et_gears.png" alt="">
           </div>
@@ -462,6 +462,30 @@
           }
         });
       }
+    })();
+
+    (function setupServiceCardScroll() {
+      var cards = document.querySelectorAll('#services-cards-grid .service-card[data-scroll-target]');
+      cards.forEach(function (card) {
+        card.addEventListener('click', function (event) {
+          if (event.target.closest('a.btn')) return;
+          var targetId = card.getAttribute('data-scroll-target');
+          var targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+        card.addEventListener('keydown', function (event) {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          if (event.target.closest('a.btn')) return;
+          event.preventDefault();
+          var targetId = card.getAttribute('data-scroll-target');
+          var targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
     })();
   </script>
 </body>
