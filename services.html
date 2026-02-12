@@ -462,26 +462,52 @@
       }
     })();
 
-    (function setupServiceCardScroll() {
+    (function setupServiceCardClick() {
+      var validCardIds = ['advisory', 'products', 'technology', 'support'];
       var cards = document.querySelectorAll('#services-cards-grid .service-card[data-scroll-target]');
+      var serviceSections = document.querySelectorAll('[data-service-section]');
+
+      function setActiveCard(activeCardId) {
+        var allCards = document.querySelectorAll('#services-cards-grid .service-card');
+        allCards.forEach(function (card) {
+          if (card.getAttribute('data-service-card') === activeCardId) {
+            card.classList.remove('service-card-disabled');
+          } else {
+            card.classList.add('service-card-disabled');
+          }
+        });
+        serviceSections.forEach(function (section) {
+          if (section.getAttribute('data-service-section') === activeCardId) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      }
+
       cards.forEach(function (card) {
-        card.addEventListener('click', function (event) {
-          if (event.target.closest('a.btn')) return;
+        function handleCardSelect() {
+          var cardId = card.getAttribute('data-service-card');
+          if (!cardId || validCardIds.indexOf(cardId) === -1) return;
+          setActiveCard(cardId);
           var targetId = card.getAttribute('data-scroll-target');
           var targetSection = document.querySelector(targetId);
           if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
+          var newUrl = window.location.pathname + '?card=' + encodeURIComponent(cardId);
+          window.history.replaceState({ card: cardId }, '', newUrl);
+        }
+        card.addEventListener('click', function (event) {
+          if (event.target.closest('a.btn')) return;
+          event.preventDefault();
+          handleCardSelect();
         });
         card.addEventListener('keydown', function (event) {
           if (event.key !== 'Enter' && event.key !== ' ') return;
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
-          var targetId = card.getAttribute('data-scroll-target');
-          var targetSection = document.querySelector(targetId);
-          if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+          handleCardSelect();
         });
       });
     })();

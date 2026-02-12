@@ -2316,8 +2316,8 @@ textarea:focus {
 .service-card-disabled {
   opacity: 0.9;
   filter: grayscale(1);
-  pointer-events: none;
-  cursor: not-allowed;
+  /* remain clickable so user can switch to this card */
+  cursor: pointer;
 }
 
 .service-card-disabled:hover {
