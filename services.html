@@ -54,8 +54,8 @@
         <p class="lead">Comprehensive solutions to help enterprises transform, integrate, and scale with confidence.</p>
       </div>
 
-      <div class="services-grid">
-        <article class="service-card reveal">
+      <div class="services-grid" id="services-cards-grid">
+        <article class="service-card reveal" data-service-card="advisory">
           <div class="service-icon  "> 
             <img  src="./images/bulb-serv.png" alt="">
           </div>
@@ -64,7 +64,7 @@
           <a href="serviceDetails/DataStrategy.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal">
+        <article class="service-card reveal" data-service-card="products">
           <div class="service-icon  ">
             <img   src="./images/cube-box.png" alt="">
           </div>
@@ -73,7 +73,7 @@
           <a href="serviceDetails/ProductsandAccelerators.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal">
+        <article class="service-card reveal" data-service-card="technology">
           <div class="service-icon  ">
             <img   src="./images/eos-icons_neural-network.png" alt="">
           </div>
@@ -82,7 +82,7 @@
           <a href="serviceDetails/GenerativeAI.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
-        <article class="service-card reveal">
+        <article class="service-card reveal" data-service-card="support">
           <div class="service-icon  ">
             <img   src="./images/et_gears.png" alt="">
           </div>
@@ -148,7 +148,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="advisory">
+    <section class="section alt" id="advisory" data-service-section="advisory">
       <div class="container">
         <div class="section-header section-header-center">
           <h2 class="section-title">Advisory Services</h2>
@@ -164,7 +164,7 @@
       </div>
     </section>
 
-    <section class="section" id="accelerators">
+    <section class="section" id="accelerators" data-service-section="products">
       <div class="container">
         <div class="section-header section-header-center">
           <h2 class="section-title">Products & Accelerators</h2>
@@ -178,7 +178,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="tech-consulting">
+    <section class="section alt" id="tech-consulting" data-service-section="technology">
       <div class="container">
         <div class="section-header section-header-center">
           <h2 class="section-title">Technology Consulting (Data, AI & ML)</h2>
@@ -194,7 +194,7 @@
       </div>
     </section>
 
-    <section class="section" id="support">
+    <section class="section" id="support" data-service-section="support">
       <div class="container">
         <div class="section-header section-header-center">
           <h2 class="section-title">Support</h2>
@@ -437,5 +437,32 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    (function highlightClickedServiceCardAndFilterSections() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var activeCardId = urlParams.get('card');
+      var validIds = ['advisory', 'products', 'technology', 'support'];
+
+      if (activeCardId && validIds.indexOf(activeCardId) !== -1) {
+        var cards = document.querySelectorAll('#services-cards-grid .service-card');
+        cards.forEach(function (card) {
+          if (card.getAttribute('data-service-card') === activeCardId) {
+            card.classList.remove('service-card-disabled');
+          } else {
+            card.classList.add('service-card-disabled');
+          }
+        });
+
+        var serviceSections = document.querySelectorAll('[data-service-section]');
+        serviceSections.forEach(function (section) {
+          if (section.getAttribute('data-service-section') === activeCardId) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

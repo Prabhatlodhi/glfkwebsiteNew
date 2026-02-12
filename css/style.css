@@ -2308,6 +2308,18 @@ textarea:focus {
   line-height: 1.6;
 }
 
+.service-card-disabled {
+  opacity: 0.9;
+  filter: grayscale(1);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.service-card-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .icon-placeholder {
   border-radius: 4px;
 }
