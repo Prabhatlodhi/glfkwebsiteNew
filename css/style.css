@@ -625,7 +625,12 @@ h1 {
 
 @media (min-width: 981px) {
   .section {
-    padding-top: 65px;
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
+  .section-services-special {
+    padding-top: 60px;
     padding-bottom: 65px;
   }
 }
