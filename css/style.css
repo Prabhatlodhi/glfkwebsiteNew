@@ -4371,3 +4371,35 @@ textarea:focus {
     font-size: 16px;
   }
 }
+
+/* GenAI detail panel on services page */
+.genai-card {
+  cursor: pointer;
+}
+
+.genai-detail-panel[hidden] {
+  display: none !important;
+}
+
+.genai-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.genai-detail-header .section-title {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.genai-detail-close {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
