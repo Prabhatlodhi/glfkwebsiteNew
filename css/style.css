@@ -630,8 +630,8 @@ h1 {
   }
 
   .section-services-special {
-    padding-top: 60px;
-    padding-bottom: 65px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -685,7 +685,7 @@ h1 {
 .section-sub {
   margin: 6px 0 0;
   color: var(--c-muted);
-  max-width: 70ch;
+  max-width: 100ch;
 }
 
 .grid-4 {
@@ -2296,7 +2296,7 @@ textarea:focus {
 
 .service-card {
   background: var(--c-surface);
-  padding: 40px 32px;
+  padding: 15px 20px;
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
