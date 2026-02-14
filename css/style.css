@@ -4434,3 +4434,596 @@ textarea:focus {
   gap: 6px;
   flex-shrink: 0;
 }
+
+/* Advisory detail panel on services page */
+[data-advisory-card] {
+  cursor: pointer;
+}
+
+.advisory-detail-panel[hidden] {
+  display: none !important;
+}
+
+/* Advisory detail content – container spacing */
+.advisory-detail-content .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .advisory-detail-content .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advisory-detail-content .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Advisory detail content – service hero */
+.advisory-detail-content .service-hero {
+  position: relative;
+  padding: 48px 0 56px;
+  overflow: hidden;
+}
+
+.advisory-detail-content .advisory-hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.advisory-detail-content .advisory-hero-top .genai-detail-close {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.advisory-detail-content .service-hero-background {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-hero-to-white);
+}
+
+.advisory-detail-content .service-hero .gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(var(--c-blue-900-rgb), 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.advisory-detail-content .service-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.advisory-detail-content .service-hero .breadcrumb {
+  margin-bottom: 16px;
+}
+
+.advisory-detail-content .service-hero-content {
+  max-width: 720px;
+}
+
+.advisory-detail-content .service-hero-title {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 700;
+  color: var(--c-blue-900);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.advisory-detail-content .service-hero-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 600;
+  color: var(--c-blue-800);
+  margin: 0 0 16px;
+  line-height: 1.4;
+}
+
+.advisory-detail-content .service-hero-description {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--c-muted);
+  margin: 0 0 24px;
+}
+
+.advisory-detail-content .service-hero .btn-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Advisory detail – section padding & layout */
+.advisory-detail-content .section-padding {
+  padding-top: 70px;
+  padding-bottom: 56px;
+}
+
+.advisory-detail-content .section-header {
+  display: block;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.advisory-detail-content .section-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-green-600);
+  margin-bottom: 8px;
+}
+
+.advisory-detail-content .section-header .section-title {
+  margin: 0 0 12px;
+}
+
+.advisory-detail-content .section-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin: 0;
+  max-width: 640px;
+}
+
+.advisory-detail-content .bg-light {
+  background: var(--c-surface-2);
+}
+
+/* Advisory detail – value proposition */
+.advisory-detail-content .value-proposition .value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.advisory-detail-content .value-proposition .value-card {
+  background: var(--c-surface);
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--c-border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.advisory-detail-content .value-proposition .value-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.advisory-detail-content .value-proposition .value-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(var(--c-green-600-rgb), 0.12);
+  color: var(--c-green-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.advisory-detail-content .value-proposition .value-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.advisory-detail-content .value-proposition .value-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin: 0;
+}
+
+/* Advisory detail – capabilities */
+.advisory-detail-content .capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.advisory-detail-content .capability-item {
+  background: var(--c-surface);
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border);
+}
+
+.advisory-detail-content .capability-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.advisory-detail-content .capability-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(var(--c-blue-600-rgb), 0.1);
+  color: var(--c-blue-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.advisory-detail-content .capability-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.advisory-detail-content .capability-item > p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin: 0 0 16px;
+}
+
+.advisory-detail-content .capability-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advisory-detail-content .capability-list li {
+  font-size: 14px;
+  color: var(--c-text);
+  padding: 6px 0 6px 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.advisory-detail-content .capability-list li i {
+  position: absolute;
+  left: 0;
+  color: var(--c-green-600);
+  font-size: 12px;
+}
+
+/* Advisory detail – solutions tabs */
+.advisory-detail-content .solutions-tabs .tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--c-border);
+}
+
+.advisory-detail-content .solutions-tabs .tab-panel {
+  display: none;
+}
+
+.advisory-detail-content .solutions-tabs .tab-panel.active {
+  display: block;
+}
+
+.advisory-detail-content .solution-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: start;
+  padding: 24px 0;
+}
+
+.advisory-detail-content .solution-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 12px;
+}
+
+.advisory-detail-content .solution-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--c-muted);
+  margin: 0 0 16px;
+}
+
+.advisory-detail-content .solution-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advisory-detail-content .solution-list li {
+  font-size: 14px;
+  color: var(--c-text);
+  padding: 8px 0 8px 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.advisory-detail-content .solution-list li i {
+  position: absolute;
+  left: 0;
+  color: var(--c-green-600);
+  font-size: 12px;
+}
+
+.advisory-detail-content .solution-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 160px;
+}
+
+.advisory-detail-content .stat-box {
+  background: rgba(var(--c-green-600-rgb), 0.08);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(var(--c-green-600-rgb), 0.2);
+}
+
+.advisory-detail-content .stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--c-green-600);
+  margin-bottom: 4px;
+}
+
+.advisory-detail-content .stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Advisory detail – recognitions */
+.advisory-detail-content .recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.advisory-detail-content .recognition-card {
+  background: var(--c-surface);
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border);
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.advisory-detail-content .recognition-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.advisory-detail-content .recognition-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: rgba(var(--c-orange-600-rgb), 0.12);
+  color: var(--c-orange-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.advisory-detail-content .recognition-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 8px;
+}
+
+.advisory-detail-content .recognition-card p {
+  font-size: 13px;
+  color: var(--c-muted);
+  margin: 0 0 8px;
+}
+
+.advisory-detail-content .recognition-card .year {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-green-600);
+}
+
+/* Advisory detail – partners */
+.advisory-detail-content .partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advisory-detail-content .partner-item {
+  background: var(--c-surface);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border);
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.advisory-detail-content .partner-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.advisory-detail-content .partner-logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  border-radius: 12px;
+  background: var(--c-surface-2);
+  color: var(--c-blue-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.advisory-detail-content .partner-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 4px;
+}
+
+.advisory-detail-content .partner-item p {
+  font-size: 13px;
+  color: var(--c-muted);
+  margin: 0;
+}
+
+/* Advisory detail – insights */
+.advisory-detail-content .insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advisory-detail-content .insight-card {
+  background: var(--c-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  transition: box-shadow 0.2s ease;
+}
+
+.advisory-detail-content .insight-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.advisory-detail-content .insight-image {
+  height: 140px;
+  background: var(--bg-hero-to-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advisory-detail-content .insight-category {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--c-muted);
+}
+
+.advisory-detail-content .insight-content {
+  padding: 20px;
+}
+
+.advisory-detail-content .insight-content h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.advisory-detail-content .insight-content p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--c-muted);
+  margin: 0 0 12px;
+}
+
+.advisory-detail-content .insight-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-green-600);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.advisory-detail-content .insight-link:hover {
+  color: var(--c-blue-600);
+}
+
+/* Advisory detail – responsive */
+@media (max-width: 1024px) {
+  .advisory-detail-content .value-proposition .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advisory-detail-content .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-detail-content .recognition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advisory-detail-content .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advisory-detail-content .solution-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .advisory-detail-content .service-hero {
+    padding: 32px 0 40px;
+  }
+
+  .advisory-detail-content .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .advisory-detail-content .value-proposition .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-detail-content .solutions-tabs .tabs-nav {
+    flex-wrap: wrap;
+  }
+
+  .advisory-detail-content .recognition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-detail-content .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-detail-content .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-detail-content .solution-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .advisory-detail-content .service-hero-title {
+    font-size: 24px;
+  }
+
+  .advisory-detail-content .section-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

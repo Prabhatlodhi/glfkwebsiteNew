@@ -183,14 +183,405 @@
           <!-- <a class="btn btn-ghost" href="solutions.html">Explore solutions</a> -->
        
         </div>
-        <div class="grid-6">
-          <article class="card reveal"><div class="badge">Value Proposition</div><h3>Transform Your Business with Strategic Advisory</h3><p>Our advisory services combine deep industry expertise with cutting-edge technology.</p></article>
-          <article class="card reveal"><div class="badge">Capabilities</div><h3>Comprehensive Advisory Expertise</h3><p>End-to-end advisory capabilities spanning strategy, operations, technology, and organizational transformation.</p></article>
-          <article class="card reveal"><div class="badge">Solutions</div><h3>Industry-Specific Advisory Solutions</h3><p>Tailored advisory services designed for the unique challenges and opportunities of your industry.</p></article>
-          <article class="card reveal"><div class="badge">Recognitions</div><h3>Industry Recognition & Awards</h3><p>Our advisory excellence has been recognized by leading industry analysts and organizations.</p></article>
-          <article class="card reveal"><div class="badge">Strategic Partners</div><h3>Powered by Industry-Leading Partnerships</h3><p>We collaborate with technology leaders to deliver best-in-class advisory solutions.</p></article>
-          <article class="card reveal"><div class="badge">Insights</div><h3>Latest Thinking & Research</h3><p>Stay informed with our latest insights on digital transformation and advisory best practices.</p></article>
+        <div class="grid-6" id="advisory-cards-grid">
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-value-proposition" role="button" tabindex="0"><div class="badge">Value Proposition</div><h3>Transform Your Business with Strategic Advisory</h3><p>Our advisory services combine deep industry expertise with cutting-edge technology.</p></article>
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-capabilities" role="button" tabindex="0"><div class="badge">Capabilities</div><h3>Comprehensive Advisory Expertise</h3><p>End-to-end advisory capabilities spanning strategy, operations, technology, and organizational transformation.</p></article>
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-solutions" role="button" tabindex="0"><div class="badge">Solutions</div><h3>Industry-Specific Advisory Solutions</h3><p>Tailored advisory services designed for the unique challenges and opportunities of your industry.</p></article>
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-recognitions" role="button" tabindex="0"><div class="badge">Recognitions</div><h3>Industry Recognition & Awards</h3><p>Our advisory excellence has been recognized by leading industry analysts and organizations.</p></article>
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-partners" role="button" tabindex="0"><div class="badge">Strategic Partners</div><h3>Powered by Industry-Leading Partnerships</h3><p>We collaborate with technology leaders to deliver best-in-class advisory solutions.</p></article>
+          <article class="card reveal" data-advisory-card data-advisory-scroll="advisory-detail-insights" role="button" tabindex="0"><div class="badge">Insights</div><h3>Latest Thinking & Research</h3><p>Stay informed with our latest insights on digital transformation and advisory best practices.</p></article>
         </div>
+      </div>
+    </section>
+
+    <!-- Advisory detail panel (shown on Advisory section card click) -->
+    <section class="service-content advisory-detail-panel" id="advisory-detail-panel" aria-hidden="true" hidden>
+      <div class="advisory-detail-content">
+        <!-- Service Hero -->
+        <section class="service-hero">
+          <div class="service-hero-background">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="container">
+            <div class="advisory-hero-top">
+              <span></span>
+              <button type="button" class="btn btn-ghost genai-detail-close" data-advisory-close aria-label="Close Advisory details">Close <i class="fas fa-times"></i></button>
+            </div>
+            <div class="service-hero-content">
+              <h1 class="service-hero-title">Advisory Services</h1>
+              <p class="service-hero-subtitle">Navigate Complexity, Drive Transformation, Achieve Excellence</p>
+              <p class="service-hero-description">
+                Strategic guidance and expert advisory to help you navigate digital transformation,
+                optimize business processes, and unlock sustainable growth through technology innovation.
+              </p>
+              <a href="#connect" class="btn btn-primary btn-large">
+                Schedule a Consultation
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="value-proposition section-padding" id="advisory-detail-value-proposition">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Value Proposition</span>
+              <h2 class="section-title">Transform Your Business with Strategic Advisory</h2>
+              <p class="section-description">
+                Our advisory services combine deep industry expertise with cutting-edge technology insights
+                to deliver actionable strategies that drive measurable business outcomes.
+              </p>
+            </div>
+            <div class="value-grid">
+              <div class="value-card" data-aos="fade-up">
+                <div class="value-icon"><i class="fas fa-compass"></i></div>
+                <h3>Strategic Direction</h3>
+                <p>Clear roadmaps and strategic frameworks that align technology investments with business objectives, ensuring every initiative drives ROI.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Business Optimization</h3>
+                <p>Data-driven insights and process re-engineering to eliminate inefficiencies, reduce costs, and improve operational excellence.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Risk Mitigation</h3>
+                <p>Comprehensive risk assessment and mitigation strategies to protect your technology investments and ensure compliance.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Innovation Acceleration</h3>
+                <p>Identify and capitalize on emerging technologies and market opportunities to stay ahead of competition.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="capabilities section-padding bg-light" id="advisory-detail-capabilities">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Capabilities</span>
+              <h2 class="section-title">Comprehensive Advisory Expertise</h2>
+              <p class="section-description">End-to-end advisory capabilities spanning strategy, operations, technology, and organizational transformation.</p>
+            </div>
+            <div class="capabilities-grid">
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-sitemap"></i></div>
+                  <h3>Digital Transformation Strategy</h3>
+                </div>
+                <p>Develop holistic digital transformation roadmaps that modernize operations, enhance customer experiences, and create new revenue streams.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Digital maturity assessment</li>
+                  <li><i class="fas fa-check-circle"></i> Transformation roadmap development</li>
+                  <li><i class="fas fa-check-circle"></i> Change management strategy</li>
+                  <li><i class="fas fa-check-circle"></i> Technology stack optimization</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-cogs"></i></div>
+                  <h3>Business Process Consulting</h3>
+                </div>
+                <p>Re-engineer and optimize core business processes to improve efficiency, reduce costs, and enhance agility.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Process mapping and analysis</li>
+                  <li><i class="fas fa-check-circle"></i> Workflow automation opportunities</li>
+                  <li><i class="fas fa-check-circle"></i> Performance metrics design</li>
+                  <li><i class="fas fa-check-circle"></i> Continuous improvement frameworks</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-project-diagram"></i></div>
+                  <h3>Enterprise Architecture</h3>
+                </div>
+                <p>Design scalable, future-proof enterprise architectures that support business growth and digital innovation.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Architecture assessment and design</li>
+                  <li><i class="fas fa-check-circle"></i> Cloud migration strategies</li>
+                  <li><i class="fas fa-check-circle"></i> Integration architecture</li>
+                  <li><i class="fas fa-check-circle"></i> Security and compliance frameworks</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-user-shield"></i></div>
+                  <h3>Technology Governance</h3>
+                </div>
+                <p>Establish robust governance frameworks to manage technology investments, risks, and compliance requirements.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> IT governance frameworks</li>
+                  <li><i class="fas fa-check-circle"></i> Portfolio management</li>
+                  <li><i class="fas fa-check-circle"></i> Risk management strategies</li>
+                  <li><i class="fas fa-check-circle"></i> Compliance and audit support</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-users-cog"></i></div>
+                  <h3>Organizational Change Management</h3>
+                </div>
+                <p>Guide organizations through transformation with structured change management programs that ensure adoption and sustainability.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Stakeholder engagement strategies</li>
+                  <li><i class="fas fa-check-circle"></i> Communication and training programs</li>
+                  <li><i class="fas fa-check-circle"></i> Culture transformation initiatives</li>
+                  <li><i class="fas fa-check-circle"></i> Leadership coaching</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-lightbulb"></i></div>
+                  <h3>Innovation Strategy</h3>
+                </div>
+                <p>Develop innovation frameworks and strategies to identify, evaluate, and implement emerging technologies and business models.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Innovation lab setup</li>
+                  <li><i class="fas fa-check-circle"></i> Technology scouting</li>
+                  <li><i class="fas fa-check-circle"></i> Pilot and POC management</li>
+                  <li><i class="fas fa-check-circle"></i> Partnership ecosystem development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="solutions section-padding" id="advisory-detail-solutions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Solutions</span>
+              <h2 class="section-title">Industry-Specific Advisory Solutions</h2>
+              <p class="section-description">Tailored advisory services designed for the unique challenges and opportunities of your industry.</p>
+            </div>
+            <div class="solutions-tabs">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="financial">Financial Services</button>
+                <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+                <button class="tab-btn" data-tab="retail">Retail & E-commerce</button>
+                <button class="tab-btn" data-tab="manufacturing">Manufacturing</button>
+                <button class="tab-btn" data-tab="telecom">Telecom & Media</button>
+              </div>
+              <div class="tabs-content">
+                <div class="tab-panel active" id="financial">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Financial Services Transformation</h3>
+                      <p>Navigate regulatory challenges, digital disruption, and evolving customer expectations in the financial services sector.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Digital banking transformation</li>
+                        <li><i class="fas fa-arrow-right"></i> RegTech and compliance automation</li>
+                        <li><i class="fas fa-arrow-right"></i> Open banking strategies</li>
+                        <li><i class="fas fa-arrow-right"></i> Payment modernization</li>
+                        <li><i class="fas fa-arrow-right"></i> Fraud detection and risk management</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">40%</span><span class="stat-label">Cost Reduction</span></div>
+                      <div class="stat-box"><span class="stat-number">3x</span><span class="stat-label">Faster Time-to-Market</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="healthcare">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Healthcare Digital Transformation</h3>
+                      <p>Enhance patient care, optimize operations, and drive innovation in healthcare delivery through strategic technology advisory.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Electronic health records (EHR) optimization</li>
+                        <li><i class="fas fa-arrow-right"></i> Telehealth platform strategy</li>
+                        <li><i class="fas fa-arrow-right"></i> Healthcare analytics and AI</li>
+                        <li><i class="fas fa-arrow-right"></i> Patient engagement solutions</li>
+                        <li><i class="fas fa-arrow-right"></i> HIPAA compliance and security</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">50%</span><span class="stat-label">Improved Patient Satisfaction</span></div>
+                      <div class="stat-box"><span class="stat-number">35%</span><span class="stat-label">Operational Efficiency Gain</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="retail">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Retail & E-commerce Excellence</h3>
+                      <p>Create seamless omnichannel experiences, optimize supply chains, and leverage data for personalized customer engagement.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Omnichannel strategy and implementation</li>
+                        <li><i class="fas fa-arrow-right"></i> Customer data platform (CDP) strategy</li>
+                        <li><i class="fas fa-arrow-right"></i> Supply chain optimization</li>
+                        <li><i class="fas fa-arrow-right"></i> Personalization and recommendation engines</li>
+                        <li><i class="fas fa-arrow-right"></i> Store digitalization</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">60%</span><span class="stat-label">Increase in Online Sales</span></div>
+                      <div class="stat-box"><span class="stat-number">45%</span><span class="stat-label">Better Inventory Management</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="manufacturing">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Smart Manufacturing & Industry 4.0</h3>
+                      <p>Transform traditional manufacturing with IoT, automation, and data-driven decision making for operational excellence.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Smart factory design and implementation</li>
+                        <li><i class="fas fa-arrow-right"></i> IoT and sensor integration</li>
+                        <li><i class="fas fa-arrow-right"></i> Predictive maintenance strategies</li>
+                        <li><i class="fas fa-arrow-right"></i> Supply chain digitalization</li>
+                        <li><i class="fas fa-arrow-right"></i> Quality management systems</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">30%</span><span class="stat-label">Production Efficiency</span></div>
+                      <div class="stat-box"><span class="stat-number">25%</span><span class="stat-label">Downtime Reduction</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="telecom">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Telecom & Media Innovation</h3>
+                      <p>Navigate network transformation, 5G deployment, and content delivery optimization in the rapidly evolving telecom landscape.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> 5G strategy and deployment</li>
+                        <li><i class="fas fa-arrow-right"></i> Network virtualization (NFV/SDN)</li>
+                        <li><i class="fas fa-arrow-right"></i> OSS/BSS transformation</li>
+                        <li><i class="fas fa-arrow-right"></i> Content delivery optimization</li>
+                        <li><i class="fas fa-arrow-right"></i> Customer experience management</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">55%</span><span class="stat-label">Network Efficiency</span></div>
+                      <div class="stat-box"><span class="stat-number">40%</span><span class="stat-label">CAPEX Reduction</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recognitions -->
+        <section class="recognitions section-padding bg-light" id="advisory-detail-recognitions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Recognitions</span>
+              <h2 class="section-title">Industry Recognition & Awards</h2>
+              <p class="section-description">Our advisory excellence has been recognized by leading industry analysts and organizations.</p>
+            </div>
+            <div class="recognition-grid">
+              <div class="recognition-card" data-aos="zoom-in">
+                <div class="recognition-icon"><i class="fas fa-trophy"></i></div>
+                <h4>Gartner Cool Vendor</h4>
+                <p>Digital Transformation Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="recognition-icon"><i class="fas fa-award"></i></div>
+                <h4>Forrester Wave Leader</h4>
+                <p>Strategic Advisory Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="recognition-icon"><i class="fas fa-star"></i></div>
+                <h4>IDC MarketScape Leader</h4>
+                <p>Business Consulting Excellence</p>
+                <span class="year">2023</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="recognition-icon"><i class="fas fa-medal"></i></div>
+                <h4>Best Advisory Firm</h4>
+                <p>Technology Consulting Awards</p>
+                <span class="year">2023</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners section-padding" id="advisory-detail-partners">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Strategic Partners</span>
+              <h2 class="section-title">Powered by Industry-Leading Partnerships</h2>
+              <p class="section-description">We collaborate with technology leaders to deliver best-in-class advisory solutions.</p>
+            </div>
+            <div class="partners-grid">
+              <div class="partner-item" data-aos="fade-up">
+                <div class="partner-logo"><i class="fab fa-microsoft"></i></div>
+                <h4>Microsoft</h4>
+                <p>Gold Partner - Azure & Dynamics</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-logo"><i class="fab fa-aws"></i></div>
+                <h4>AWS</h4>
+                <p>Advanced Consulting Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo"><i class="fab fa-google"></i></div>
+                <h4>Google Cloud</h4>
+                <p>Premier Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-logo"><i class="fas fa-cloud"></i></div>
+                <h4>Salesforce</h4>
+                <p>Platinum Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-logo"><i class="fas fa-database"></i></div>
+                <h4>SAP</h4>
+                <p>Gold Implementation Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="partner-logo"><i class="fas fa-server"></i></div>
+                <h4>Oracle</h4>
+                <p>Platinum Partner</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Insights -->
+        <section class="insights section-padding bg-light" id="advisory-detail-insights">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Insights</span>
+              <h2 class="section-title">Latest Thinking & Research</h2>
+              <p class="section-description">Stay informed with our latest insights on digital transformation and advisory best practices.</p>
+            </div>
+            <div class="insights-grid">
+              <div class="insight-card" data-aos="fade-up">
+                <div class="insight-image"><div class="insight-category">Whitepaper</div></div>
+                <div class="insight-content">
+                  <h3>The Future of Digital Transformation</h3>
+                  <p>Explore emerging trends and strategies for successful digital transformation in 2024 and beyond.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="insight-image"><div class="insight-category">Case Study</div></div>
+                <div class="insight-content">
+                  <h3>Fortune 500 Banking Transformation</h3>
+                  <p>How we helped a leading bank achieve 40% cost reduction through strategic advisory and process optimization.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="insight-image"><div class="insight-category">Blog</div></div>
+                <div class="insight-content">
+                  <h3>5 Keys to Successful Change Management</h3>
+                  <p>Essential strategies for driving organizational adoption and ensuring transformation success.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -829,6 +1220,51 @@
 
       if (genaiCloseBtn) {
         genaiCloseBtn.addEventListener('click', hideGenaiPanel);
+      }
+    })();
+
+    (function setupAdvisoryDetailPanel() {
+      var advisoryCards = document.querySelectorAll('[data-advisory-card]');
+      var advisoryPanel = document.getElementById('advisory-detail-panel');
+      var advisoryCloseBtn = document.querySelector('[data-advisory-close]');
+
+      function showAdvisoryPanel(scrollTargetId) {
+        if (!advisoryPanel) return;
+        advisoryPanel.removeAttribute('hidden');
+        advisoryPanel.setAttribute('aria-hidden', 'false');
+        advisoryPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (scrollTargetId) {
+          var targetSection = document.getElementById(scrollTargetId);
+          if (targetSection) {
+            setTimeout(function () {
+              targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 400);
+          }
+        }
+      }
+
+      function hideAdvisoryPanel() {
+        if (!advisoryPanel) return;
+        advisoryPanel.setAttribute('hidden', '');
+        advisoryPanel.setAttribute('aria-hidden', 'true');
+      }
+
+      advisoryCards.forEach(function (advisoryCard) {
+        advisoryCard.addEventListener('click', function () {
+          var scrollTargetId = advisoryCard.getAttribute('data-advisory-scroll');
+          showAdvisoryPanel(scrollTargetId);
+        });
+        advisoryCard.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            var scrollTargetId = advisoryCard.getAttribute('data-advisory-scroll');
+            showAdvisoryPanel(scrollTargetId);
+          }
+        });
+      });
+
+      if (advisoryCloseBtn) {
+        advisoryCloseBtn.addEventListener('click', hideAdvisoryPanel);
       }
     })();
   </script>
