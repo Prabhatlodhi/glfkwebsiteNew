@@ -591,11 +591,525 @@
           <h2 class="section-title">Products & Accelerators</h2>
           <p class="section-sub">Accelerate Innovation, Reduce Time-to-Market, Scale with Confidence. Ready-to-deploy solutions and proven frameworks that accelerate your digital transformation, reduce implementation time by 60%, and deliver immediate business value.</p>
         </div>
-        <div class="grid-3">
-          <article class="card reveal"><div class="badge">Accelerate</div><h3>Reusable Frameworks</h3><p>Blueprints, templates, and automation patterns to reduce time-to-value.</p></article>
-          <article class="card reveal"><div class="badge">Deliver</div><h3>Implementation Kits</h3><p>Pre-built components that help teams move from concept to production.</p></article>
-          <article class="card reveal"><div class="badge">Scale</div><h3>Enablement</h3><p>Training and operating models that help internal teams sustain delivery.</p></article>
+        <div class="grid-6" id="product-cards-grid">
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-value-proposition" role="button" tabindex="0"><div class="badge">Value Proposition</div><h3>Transform Your Business with Ready-to-Deploy Solutions</h3><p>Our pre-built solutions and accelerators combine best practices with proven frameworks for faster ROI.</p></article>
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-capabilities" role="button" tabindex="0"><div class="badge">Capabilities</div><h3>Comprehensive Product Portfolio & Accelerators</h3><p>From pre-built platforms to custom accelerators, our solutions cover the full spectrum of enterprise needs.</p></article>
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-solutions" role="button" tabindex="0"><div class="badge">Solutions</div><h3>Featured Product Solutions</h3><p>Enterprise-grade products and accelerators designed to solve specific business challenges across industries.</p></article>
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-recognitions" role="button" tabindex="0"><div class="badge">Recognitions</div><h3>Industry Recognition & Awards</h3><p>Our product excellence has been recognized by leading industry analysts and organizations.</p></article>
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-partners" role="button" tabindex="0"><div class="badge">Strategic Partners</div><h3>Powered by Industry-Leading Partnerships</h3><p>We collaborate with technology leaders to deliver best-in-class product solutions.</p></article>
+          <article class="card reveal" data-product-card data-product-scroll="product-detail-insights" role="button" tabindex="0"><div class="badge">Insights</div><h3>Latest Thinking & Research</h3><p>Stay informed with our latest insights on product innovation and deployment best practices.</p></article>
         </div>
+      </div>
+    </section>
+
+    <!-- Product detail panel (shown on Product section card click) -->
+    <section class="service-content product-detail-panel advisory-detail-panel" id="product-detail-panel" aria-hidden="true" hidden>
+      <div class="advisory-detail-content">
+        <section class="service-hero">
+          <div class="service-hero-background">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="container">
+            <div class="advisory-hero-top">
+              <span></span>
+              <button type="button" class="btn btn-ghost genai-detail-close" data-product-close aria-label="Close Product details">Close <i class="fas fa-times"></i></button>
+            </div>
+            <div class="service-hero-content">
+              <h1 class="service-hero-title">Products & Accelerators</h1>
+              <p class="service-hero-subtitle">Accelerate Innovation, Reduce Time-to-Market, Scale with Confidence</p>
+              <p class="service-hero-description">
+                Ready-to-deploy solutions and proven frameworks that accelerate your digital transformation,
+                reduce implementation time by 60%, and deliver immediate business value.
+              </p>
+              <a href="#connect" class="btn btn-primary btn-large">
+                Request a Demo
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="value-proposition section-padding" id="product-detail-value-proposition">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Value Proposition</span>
+                    <h2 class="section-title">Transform Your Business with Ready-to-Deploy Solutions</h2>
+                    <p class="section-description">
+                        Our pre-built solutions and accelerators combine best practices with proven frameworks,
+                        enabling you to achieve faster ROI with lower risk and reduced implementation costs.
+                    </p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-card" data-aos="fade-up">
+                        <div class="value-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Rapid Deployment</h3>
+                        <p>Pre-built solutions reduce implementation time by 60%, allowing you to go live in weeks instead of months with battle-tested components.</p>
+                    </div>
+
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3>Proven Frameworks</h3>
+                        <p>Battle-tested across 100+ enterprise deployments, our frameworks incorporate industry best practices and lessons learned from successful implementations.</p>
+                    </div>
+
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Cost Efficiency</h3>
+                        <p>40% lower total cost of ownership compared to custom development, with predictable pricing and reduced maintenance overhead.</p>
+                    </div>
+
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>Enterprise Scalability</h3>
+                        <p>Built for enterprise scale and performance, our solutions grow with your business and handle millions of transactions seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="capabilities section-padding bg-light" id="product-detail-capabilities">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">Comprehensive Product Portfolio & Accelerators</h2>
+                    <p class="section-description">
+                        From pre-built platforms to custom accelerators, our solutions cover the full spectrum of enterprise needs.
+                    </p>
+                </div>
+
+                <div class="capabilities-grid">
+                    <div class="capability-item" data-aos="fade-right">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h3>Pre-Built Solution Frameworks</h3>
+                        </div>
+                        <p>Industry-specific templates and configurable modules that incorporate best practices and accelerate development cycles.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> Industry-specific templates</li>
+                            <li><i class="fas fa-check-circle"></i> Configurable modules and components</li>
+                            <li><i class="fas fa-check-circle"></i> Best practice implementations</li>
+                            <li><i class="fas fa-check-circle"></i> Integration-ready architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-item" data-aos="fade-left">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Custom Product Development</h3>
+                        </div>
+                        <p>Rapid MVP development and product engineering using agile methodologies and user-centered design principles.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> MVP development (4-8 weeks)</li>
+                            <li><i class="fas fa-check-circle"></i> Agile methodology</li>
+                            <li><i class="fas fa-check-circle"></i> User-centered design</li>
+                            <li><i class="fas fa-check-circle"></i> Continuous iteration and improvement</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-item" data-aos="fade-right">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Accelerator Platforms</h3>
+                        </div>
+                        <p>Purpose-built accelerators for data integration, API management, DevOps automation, and testing that speed up delivery.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> Data integration accelerators</li>
+                            <li><i class="fas fa-check-circle"></i> API management platforms</li>
+                            <li><i class="fas fa-check-circle"></i> DevOps automation tools</li>
+                            <li><i class="fas fa-check-circle"></i> Testing automation frameworks</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-item" data-aos="fade-left">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Cloud Migration Accelerators</h3>
+                        </div>
+                        <p>Automated tools and frameworks for risk-free cloud migration with built-in assessment, validation, and optimization.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> Assessment and planning tools</li>
+                            <li><i class="fas fa-check-circle"></i> Automated migration utilities</li>
+                            <li><i class="fas fa-check-circle"></i> Testing and validation frameworks</li>
+                            <li><i class="fas fa-check-circle"></i> Post-migration optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-item" data-aos="fade-right">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h3>Industry Solution Kits</h3>
+                        </div>
+                        <p>Vertical-specific solutions tailored for banking, healthcare, retail, manufacturing, and other key industries.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> Banking core modernization kits</li>
+                            <li><i class="fas fa-check-circle"></i> Healthcare interoperability platforms</li>
+                            <li><i class="fas fa-check-circle"></i> Retail commerce accelerators</li>
+                            <li><i class="fas fa-check-circle"></i> Manufacturing IoT starter packs</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-item" data-aos="fade-left">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Analytics & BI Accelerators</h3>
+                        </div>
+                        <p>Pre-built analytics dashboards, report generators, and visualization libraries for instant business intelligence.</p>
+                        <ul class="capability-list">
+                            <li><i class="fas fa-check-circle"></i> Dashboard templates</li>
+                            <li><i class="fas fa-check-circle"></i> Report generation engines</li>
+                            <li><i class="fas fa-check-circle"></i> Data visualization libraries</li>
+                            <li><i class="fas fa-check-circle"></i> Predictive analytics models</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="solutions section-padding" id="product-detail-solutions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Solutions</span>
+                    <h2 class="section-title">Featured Product Solutions</h2>
+                    <p class="section-description">
+                        Enterprise-grade products and accelerators designed to solve specific business challenges across industries.
+                    </p>
+                </div>
+
+                <div class="solutions-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="product-datasync">DataSync Pro</button>
+                        <button class="tab-btn" data-tab="product-cloudvault">CloudVault</button>
+                        <button class="tab-btn" data-tab="product-insighthub">InsightHub</button>
+                        <button class="tab-btn" data-tab="product-devops360">DevOps360</button>
+                        <button class="tab-btn" data-tab="product-customeriq">CustomerIQ</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="product-datasync">
+                            <div class="solution-content">
+                                <div class="solution-text">
+                                    <h3>DataSync Pro - Enterprise Data Integration</h3>
+                                    <p>Unified data integration platform with real-time synchronization, 200+ pre-built connectors, and advanced ETL/ELT capabilities.</p>
+                                    <ul class="solution-list">
+                                        <li><i class="fas fa-arrow-right"></i> Real-time data synchronization across systems</li>
+                                        <li><i class="fas fa-arrow-right"></i> 200+ pre-built connectors (databases, SaaS, APIs)</li>
+                                        <li><i class="fas fa-arrow-right"></i> Advanced ETL/ELT transformation engine</li>
+                                        <li><i class="fas fa-arrow-right"></i> Data quality and validation rules</li>
+                                        <li><i class="fas fa-arrow-right"></i> Visual workflow designer</li>
+                                    </ul>
+                                </div>
+                                <div class="solution-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-number">75%</span>
+                                        <span class="stat-label">Faster Integration</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-number">200+</span>
+                                        <span class="stat-label">Pre-Built Connectors</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="product-cloudvault">
+                            <div class="solution-content">
+                                <div class="solution-text">
+                                    <h3>CloudVault - Secure Cloud Migration Accelerator</h3>
+                                    <p>Automated cloud migration platform with risk-free migration paths, compliance validation, and cost optimization built-in.</p>
+                                    <ul class="solution-list">
+                                        <li><i class="fas fa-arrow-right"></i> Automated discovery and assessment</li>
+                                        <li><i class="fas fa-arrow-right"></i> Risk-free migration strategies</li>
+                                        <li><i class="fas fa-arrow-right"></i> Compliance validation (HIPAA, SOC2, GDPR)</li>
+                                        <li><i class="fas fa-arrow-right"></i> Cost optimization recommendations</li>
+                                        <li><i class="fas fa-arrow-right"></i> Multi-cloud support (AWS, Azure, GCP)</li>
+                                    </ul>
+                                </div>
+                                <div class="solution-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-number">60%</span>
+                                        <span class="stat-label">Faster Migration</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-number">30%</span>
+                                        <span class="stat-label">Cost Savings</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="product-insighthub">
+                            <div class="solution-content">
+                                <div class="solution-text">
+                                    <h3>InsightHub - Analytics & BI Platform</h3>
+                                    <p>Self-service analytics platform with AI-powered insights, real-time dashboards, and embedded analytics capabilities.</p>
+                                    <ul class="solution-list">
+                                        <li><i class="fas fa-arrow-right"></i> Self-service analytics for business users</li>
+                                        <li><i class="fas fa-arrow-right"></i> AI-powered insights and recommendations</li>
+                                        <li><i class="fas fa-arrow-right"></i> Real-time interactive dashboards</li>
+                                        <li><i class="fas fa-arrow-right"></i> Embedded analytics SDK</li>
+                                        <li><i class="fas fa-arrow-right"></i> Natural language queries</li>
+                                    </ul>
+                                </div>
+                                <div class="solution-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-number">10x</span>
+                                        <span class="stat-label">Faster Insights</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-number">80%</span>
+                                        <span class="stat-label">User Adoption</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="product-devops360">
+                            <div class="solution-content">
+                                <div class="solution-text">
+                                    <h3>DevOps360 - Complete DevOps Automation</h3>
+                                    <p>End-to-end DevOps platform with CI/CD pipelines, infrastructure as code, automated testing, and security scanning.</p>
+                                    <ul class="solution-list">
+                                        <li><i class="fas fa-arrow-right"></i> Automated CI/CD pipelines</li>
+                                        <li><i class="fas fa-arrow-right"></i> Infrastructure as Code (Terraform, Ansible)</li>
+                                        <li><i class="fas fa-arrow-right"></i> Automated testing frameworks</li>
+                                        <li><i class="fas fa-arrow-right"></i> Security scanning and compliance</li>
+                                        <li><i class="fas fa-arrow-right"></i> Container orchestration</li>
+                                    </ul>
+                                </div>
+                                <div class="solution-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-number">90%</span>
+                                        <span class="stat-label">Deployment Automation</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-number">50%</span>
+                                        <span class="stat-label">Fewer Production Issues</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="product-customeriq">
+                            <div class="solution-content">
+                                <div class="solution-text">
+                                    <h3>CustomerIQ - Customer Data Platform</h3>
+                                    <p>Unified customer data platform with 360-degree view, behavioral analytics, personalization engine, and marketing automation.</p>
+                                    <ul class="solution-list">
+                                        <li><i class="fas fa-arrow-right"></i> 360-degree customer view</li>
+                                        <li><i class="fas fa-arrow-right"></i> Behavioral analytics and segmentation</li>
+                                        <li><i class="fas fa-arrow-right"></i> AI-powered personalization engine</li>
+                                        <li><i class="fas fa-arrow-right"></i> Marketing automation workflows</li>
+                                        <li><i class="fas fa-arrow-right"></i> Real-time customer journey tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="solution-stats">
+                                    <div class="stat-box">
+                                        <span class="stat-number">3x</span>
+                                        <span class="stat-label">Conversion Rate</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-number">45%</span>
+                                        <span class="stat-label">Customer Retention</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recognitions -->
+        <section class="recognitions section-padding bg-light" id="product-detail-recognitions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Recognitions</span>
+                    <h2 class="section-title">Industry Recognition & Awards</h2>
+                    <p class="section-description">
+                        Our product excellence has been recognized by leading industry analysts and organizations.
+                    </p>
+                </div>
+
+                <div class="recognition-grid">
+                    <div class="recognition-card" data-aos="zoom-in">
+                        <div class="recognition-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Gartner Cool Vendor</h4>
+                        <p>Digital Transformation Services</p>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <div class="recognition-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="recognition-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Forrester Wave Leader</h4>
+                        <p>Strategic Advisory Services</p>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <div class="recognition-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="recognition-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>IDC MarketScape Leader</h4>
+                        <p>Business Consulting Excellence</p>
+                        <span class="year">2023</span>
+                    </div>
+
+                    <div class="recognition-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="recognition-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>Best Advisory Firm</h4>
+                        <p>Technology Consulting Awards</p>
+                        <span class="year">2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners section-padding" id="product-detail-partners">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Strategic Partners</span>
+                    <h2 class="section-title">Powered by Industry-Leading Partnerships</h2>
+                    <p class="section-description">
+                        We collaborate with technology leaders to deliver best-in-class product solutions.
+                    </p>
+                </div>
+
+                <div class="partners-grid">
+                    <div class="partner-item" data-aos="fade-up">
+                        <div class="partner-logo">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4>Microsoft</h4>
+                        <p>Gold Partner - Azure & Dynamics</p>
+                    </div>
+
+                    <div class="partner-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="partner-logo">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h4>AWS</h4>
+                        <p>Advanced Consulting Partner</p>
+                    </div>
+
+                    <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="partner-logo">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h4>Google Cloud</h4>
+                        <p>Premier Partner</p>
+                    </div>
+
+                    <div class="partner-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="partner-logo">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Salesforce</h4>
+                        <p>Platinum Partner</p>
+                    </div>
+
+                    <div class="partner-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="partner-logo">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>SAP</h4>
+                        <p>Gold Implementation Partner</p>
+                    </div>
+
+                    <div class="partner-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="partner-logo">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Oracle</h4>
+                        <p>Platinum Partner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights -->
+        <section class="insights section-padding bg-light" id="product-detail-insights">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Insights</span>
+                    <h2 class="section-title">Latest Thinking & Research</h2>
+                    <p class="section-description">
+                        Stay informed with our latest insights on product innovation and deployment best practices.
+                    </p>
+                </div>
+
+                <div class="insights-grid">
+                    <div class="insight-card" data-aos="fade-up">
+                        <div class="insight-image">
+                            <div class="insight-category">Whitepaper</div>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Product Innovation Roadmap 2024</h3>
+                            <p>Explore our latest product innovations and upcoming releases that will transform how enterprises deploy technology solutions.</p>
+                            <a href="#" class="insight-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="insight-image">
+                            <div class="insight-category">Case Study</div>
+                        </div>
+                        <div class="insight-content">
+                            <h3>DataSync Pro: 100+ Enterprise Deployments</h3>
+                            <p>Success story of how our data integration platform helped a Fortune 500 company consolidate 50+ data sources in 8 weeks.</p>
+                            <a href="#" class="insight-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="insight-image">
+                            <div class="insight-category">Blog</div>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Cloud Migration Best Practices Guide</h3>
+                            <p>Comprehensive guide to successful cloud migration with our CloudVault accelerator, including common pitfalls to avoid.</p>
+                            <a href="#" class="insight-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
       </div>
     </section>
 
@@ -1266,6 +1780,69 @@
       if (advisoryCloseBtn) {
         advisoryCloseBtn.addEventListener('click', hideAdvisoryPanel);
       }
+    })();
+
+    (function setupProductDetailPanel() {
+      var productCards = document.querySelectorAll('[data-product-card]');
+      var productPanel = document.getElementById('product-detail-panel');
+      var productCloseBtn = document.querySelector('[data-product-close]');
+
+      function showProductPanel(scrollTargetId) {
+        if (!productPanel) return;
+        productPanel.removeAttribute('hidden');
+        productPanel.setAttribute('aria-hidden', 'false');
+        productPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (scrollTargetId) {
+          var targetSection = document.getElementById(scrollTargetId);
+          if (targetSection) {
+            setTimeout(function () {
+              targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 400);
+          }
+        }
+      }
+
+      function hideProductPanel() {
+        if (!productPanel) return;
+        productPanel.setAttribute('hidden', '');
+        productPanel.setAttribute('aria-hidden', 'true');
+      }
+
+      productCards.forEach(function (productCard) {
+        productCard.addEventListener('click', function () {
+          var scrollTargetId = productCard.getAttribute('data-product-scroll');
+          showProductPanel(scrollTargetId);
+        });
+        productCard.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            var scrollTargetId = productCard.getAttribute('data-product-scroll');
+            showProductPanel(scrollTargetId);
+          }
+        });
+      });
+
+      if (productCloseBtn) {
+        productCloseBtn.addEventListener('click', hideProductPanel);
+      }
+    })();
+
+    (function setupSolutionsTabs() {
+      var tabsContainers = document.querySelectorAll('.solutions-tabs');
+      tabsContainers.forEach(function (tabsContainer) {
+        var tabButtons = tabsContainer.querySelectorAll('.tab-btn');
+        var tabPanels = tabsContainer.querySelectorAll('.tab-panel');
+        tabButtons.forEach(function (tabButton) {
+          tabButton.addEventListener('click', function () {
+            var targetId = tabButton.getAttribute('data-tab');
+            tabButtons.forEach(function (btn) { btn.classList.remove('active'); });
+            tabPanels.forEach(function (panel) { panel.classList.remove('active'); });
+            tabButton.classList.add('active');
+            var targetPanel = tabsContainer.querySelector('.tab-panel#' + targetId);
+            if (targetPanel) targetPanel.classList.add('active');
+          });
+        });
+      });
     })();
   </script>
 </body>

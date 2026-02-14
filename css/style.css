@@ -4444,6 +4444,15 @@ textarea:focus {
   display: none !important;
 }
 
+/* Product detail panel on services page */
+[data-product-card] {
+  cursor: pointer;
+}
+
+.product-detail-panel[hidden] {
+  display: none !important;
+}
+
 /* Advisory detail content – container spacing */
 .advisory-detail-content .container {
   padding-left: 24px;
@@ -4551,7 +4560,7 @@ textarea:focus {
 .advisory-detail-content .section-header {
   display: block;
   margin-bottom: 32px;
-  text-align: left;
+  text-align: center;
 }
 
 .advisory-detail-content .section-tag {
@@ -4572,8 +4581,9 @@ textarea:focus {
   font-size: 15px;
   line-height: 1.6;
   color: var(--c-muted);
-  margin: 0;
+  margin: 0 auto;
   max-width: 640px;
+  text-align: center;
 }
 
 .advisory-detail-content .bg-light {
