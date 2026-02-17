@@ -657,6 +657,19 @@ h1 {
   margin-right: auto;
 }
 
+.section-tag {
+  display: inline-block;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-green-600);
+  background-color: rgba(var(--c-green-600-rgb), 0.12);
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
 .section-header-services {
   /* padding-left: 0px; */
   /* padding-bottom: 20px; */
@@ -4585,12 +4598,6 @@ textarea:focus {
 }
 
 .advisory-detail-content .section-tag {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--c-green-600);
   margin-bottom: 8px;
 }
 
