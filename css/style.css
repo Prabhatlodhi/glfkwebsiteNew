@@ -4603,7 +4603,7 @@ textarea:focus {
   line-height: 1.6;
   color: var(--c-muted);
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 800px;
   text-align: center;
 }
 
