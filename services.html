@@ -1789,11 +1789,414 @@
           <h2 class="section-title">Support Services</h2>
           <p class="section-sub">Always Available, Always Responsive, Always Reliable. Enterprise-grade 24/7 support services with proactive monitoring, rapid issue resolution, and dedicated experts ensuring your systems perform optimally around the clock.</p>
         </div>
-        <div class="grid-3">
-          <article class="card reveal"><div class="badge">Ops</div><h3>Run & Maintain</h3><p>Keep pipelines, models, and integrations healthy in production.</p></article>
-          <article class="card reveal"><div class="badge">SLA</div><h3>Incident Response</h3><p>Structured triage, root-cause analysis, and prevention playbooks.</p></article>
-          <article class="card reveal"><div class="badge">Improve</div><h3>Optimization</h3><p>Cost, performance, and quality improvements aligned to business metrics.</p></article>
+        <div class="grid-6" id="support-cards-grid">
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-value-proposition" role="button" tabindex="0"><div class="badge">Value Proposition</div><h3>World-Class Support for Mission-Critical Systems</h3><p>Our support services ensure maximum uptime, optimal performance, and peace of mind with round-the-clock availability.</p></article>
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-capabilities" role="button" tabindex="0"><div class="badge">Capabilities</div><h3>Comprehensive Support Capabilities</h3><p>End-to-end support services from incident response to performance optimization and knowledge transfer.</p></article>
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-solutions" role="button" tabindex="0"><div class="badge">Solutions</div><h3>Flexible Support Plans for Every Need</h3><p>Choose from our tiered support plans designed to match your business requirements and budget.</p></article>
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-recognitions" role="button" tabindex="0"><div class="badge">Recognitions</div><h3>Industry Recognition &amp; Awards</h3><p>Our support excellence has been recognized by leading industry analysts and organizations.</p></article>
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-partners" role="button" tabindex="0"><div class="badge">Strategic Partners</div><h3>Powered by Industry-Leading Partnerships</h3><p>We collaborate with technology leaders to deliver best-in-class support solutions.</p></article>
+          <article class="card reveal" data-support-card data-support-scroll="support-detail-insights" role="button" tabindex="0"><div class="badge">Insights</div><h3>Latest Thinking &amp; Research</h3><p>Stay informed with our latest insights on support best practices and operational excellence.</p></article>
         </div>
+      </div>
+    </section>
+
+    <!-- Support Services detail panel (shown on Support section card click) -->
+    <section class="service-content advisory-detail-panel support-detail-panel" id="support-detail-panel" aria-hidden="true" hidden>
+      <div class="advisory-detail-content">
+        <section class="service-hero">
+          <div class="service-hero-background">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="container">
+            <div class="advisory-hero-top">
+              <span></span>
+              <button type="button" class="btn btn-ghost genai-detail-close" data-support-close aria-label="Close Support details">Close <i class="fas fa-times"></i></button>
+            </div>
+            <div class="service-hero-content">
+              <h1 class="service-hero-title">Support Services</h1>
+              <p class="service-hero-subtitle">Always Available, Always Responsive, Always Reliable</p>
+              <p class="service-hero-description">
+                Enterprise-grade 24/7 support services with proactive monitoring, rapid issue resolution,
+                and dedicated experts ensuring your systems perform optimally around the clock.
+              </p>
+              <a href="#connect" class="btn btn-primary btn-large">
+                Schedule a Consultation
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="value-proposition section-padding" id="support-detail-value-proposition">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Value Proposition</span>
+              <h2 class="section-title">World-Class Support for Mission-Critical Systems</h2>
+              <p class="section-description">
+                Our support services ensure maximum uptime, optimal performance, and peace of mind with
+                round-the-clock availability and expert technical teams.
+              </p>
+            </div>
+            <div class="value-grid">
+              <div class="value-card" data-aos="fade-up">
+                <div class="value-icon"><i class="fas fa-clock"></i></div>
+                <h3>24/7 Availability</h3>
+                <p>Round-the-clock support across all time zones with average response time of 15 minutes for critical issues and dedicated support engineers.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-icon"><i class="fas fa-eye"></i></div>
+                <h3>Proactive Monitoring</h3>
+                <p>Issues identified and resolved before impact through real-time infrastructure monitoring, APM, log analysis, and anomaly detection.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-icon"><i class="fas fa-certificate"></i></div>
+                <h3>SLA Guarantee</h3>
+                <p>99.9% uptime guarantee with compensation for SLA breaches, tiered support levels, and prioritized escalation paths.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-icon"><i class="fas fa-user-tie"></i></div>
+                <h3>Expert Teams</h3>
+                <p>Certified engineers with deep domain expertise across platforms, technologies, and industries providing personalized support.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="capabilities section-padding bg-light" id="support-detail-capabilities">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Capabilities</span>
+              <h2 class="section-title">Comprehensive Support Capabilities</h2>
+              <p class="section-description">
+                End-to-end support services from incident response to performance optimization and knowledge transfer.
+              </p>
+            </div>
+            <div class="capabilities-grid">
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-headset"></i></div>
+                  <h3>24/7 Technical Support</h3>
+                </div>
+                <p>Multi-channel support with tiered levels (L1-L4), rapid response times, and comprehensive issue tracking and reporting.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Multi-channel support (phone, email, chat, portal)</li>
+                  <li><i class="fas fa-check-circle"></i> Tiered support levels (L1, L2, L3, L4)</li>
+                  <li><i class="fas fa-check-circle"></i> Average response: 15 minutes (critical)</li>
+                  <li><i class="fas fa-check-circle"></i> Issue resolution tracking and reporting</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-desktop"></i></div>
+                  <h3>Proactive System Monitoring</h3>
+                </div>
+                <p>Real-time monitoring with APM, log analysis, anomaly detection, capacity planning, and security threat monitoring.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Real-time infrastructure monitoring</li>
+                  <li><i class="fas fa-check-circle"></i> Application performance monitoring (APM)</li>
+                  <li><i class="fas fa-check-circle"></i> Log analysis and anomaly detection</li>
+                  <li><i class="fas fa-check-circle"></i> Capacity planning and forecasting</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-tools"></i></div>
+                  <h3>Maintenance &amp; Updates</h3>
+                </div>
+                <p>Regular system maintenance, security patches, software upgrades, database optimization, and performance tuning.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Regular system maintenance windows</li>
+                  <li><i class="fas fa-check-circle"></i> Security patch management</li>
+                  <li><i class="fas fa-check-circle"></i> Software version upgrades</li>
+                  <li><i class="fas fa-check-circle"></i> Database optimization and tuning</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                  <h3>Incident Management</h3>
+                </div>
+                <p>Rapid incident response with root cause analysis, post-incident reviews, knowledge base updates, and continuous improvement.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Rapid incident response</li>
+                  <li><i class="fas fa-check-circle"></i> Root cause analysis</li>
+                  <li><i class="fas fa-check-circle"></i> Post-incident reviews and reporting</li>
+                  <li><i class="fas fa-check-circle"></i> Knowledge base maintenance</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-tachometer-alt"></i></div>
+                  <h3>Performance Optimization</h3>
+                </div>
+                <p>Application tuning, database optimization, infrastructure right-sizing, cost optimization, and scalability enhancements.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Application performance tuning</li>
+                  <li><i class="fas fa-check-circle"></i> Database query optimization</li>
+                  <li><i class="fas fa-check-circle"></i> Infrastructure right-sizing</li>
+                  <li><i class="fas fa-check-circle"></i> Cost optimization recommendations</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-graduation-cap"></i></div>
+                  <h3>Training &amp; Knowledge Transfer</h3>
+                </div>
+                <p>User training programs, administrator training, documentation, runbooks, best practices workshops, and certifications.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> User training programs</li>
+                  <li><i class="fas fa-check-circle"></i> Administrator training</li>
+                  <li><i class="fas fa-check-circle"></i> Documentation and runbooks</li>
+                  <li><i class="fas fa-check-circle"></i> Best practices workshops</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="solutions section-padding" id="support-detail-solutions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Solutions</span>
+              <h2 class="section-title">Flexible Support Plans for Every Need</h2>
+              <p class="section-description">
+                Choose from our tiered support plans designed to match your business requirements and budget.
+              </p>
+            </div>
+            <div class="solutions-tabs">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="support-basic">Basic Support</button>
+                <button class="tab-btn" data-tab="support-standard">Standard Support</button>
+                <button class="tab-btn" data-tab="support-premium">Premium Support</button>
+                <button class="tab-btn" data-tab="support-enterprise">Enterprise Support</button>
+                <button class="tab-btn" data-tab="support-sla">SLA Details</button>
+              </div>
+              <div class="tabs-content">
+                <div class="tab-panel active" id="support-basic">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Basic Support Plan</h3>
+                      <p>Essential support for small teams and non-critical systems with business hours coverage.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Business hours support (8x5)</li>
+                        <li><i class="fas fa-arrow-right"></i> Email and portal access</li>
+                        <li><i class="fas fa-arrow-right"></i> Response time: 4 hours</li>
+                        <li><i class="fas fa-arrow-right"></i> Monthly system reports</li>
+                        <li><i class="fas fa-arrow-right"></i> Quarterly business reviews</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">4hrs</span><span class="stat-label">Response Time</span></div>
+                      <div class="stat-box"><span class="stat-number">8x5</span><span class="stat-label">Availability</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="support-standard">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Standard Support Plan</h3>
+                      <p>Extended coverage for growing businesses with proactive health checks and faster response times.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Extended hours support (12x5)</li>
+                        <li><i class="fas fa-arrow-right"></i> Phone, email, and chat support</li>
+                        <li><i class="fas fa-arrow-right"></i> Response time: 2 hours</li>
+                        <li><i class="fas fa-arrow-right"></i> Bi-weekly health checks</li>
+                        <li><i class="fas fa-arrow-right"></i> Monthly optimization reports</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">2hrs</span><span class="stat-label">Response Time</span></div>
+                      <div class="stat-box"><span class="stat-number">12x5</span><span class="stat-label">Availability</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="support-premium">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Premium Support Plan</h3>
+                      <p>24/7 support with dedicated engineers, proactive monitoring, and priority escalation for mission-critical systems.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> 24x7 support coverage</li>
+                        <li><i class="fas fa-arrow-right"></i> Dedicated support engineer</li>
+                        <li><i class="fas fa-arrow-right"></i> Response time: 30 minutes</li>
+                        <li><i class="fas fa-arrow-right"></i> Weekly health checks</li>
+                        <li><i class="fas fa-arrow-right"></i> Proactive monitoring and alerts</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">30min</span><span class="stat-label">Response Time</span></div>
+                      <div class="stat-box"><span class="stat-number">24x7</span><span class="stat-label">Availability</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="support-enterprise">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Enterprise Support Plan</h3>
+                      <p>Ultimate support package with named team, 15-minute response, continuous monitoring, and on-site support options.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> 24x7x365 support coverage</li>
+                        <li><i class="fas fa-arrow-right"></i> Named support team</li>
+                        <li><i class="fas fa-arrow-right"></i> Response time: 15 minutes</li>
+                        <li><i class="fas fa-arrow-right"></i> Continuous monitoring</li>
+                        <li><i class="fas fa-arrow-right"></i> Dedicated account manager &amp; on-site support</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">15min</span><span class="stat-label">Response Time</span></div>
+                      <div class="stat-box"><span class="stat-number">99.99%</span><span class="stat-label">Uptime SLA</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="support-sla">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Service Level Objectives</h3>
+                      <p>Our comprehensive SLA guarantees ensure your systems remain available and performant.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> <strong>Critical:</strong> 15 min response, 4hr resolution, 99.99% uptime</li>
+                        <li><i class="fas fa-arrow-right"></i> <strong>High:</strong> 1hr response, 8hr resolution, 99.9% uptime</li>
+                        <li><i class="fas fa-arrow-right"></i> <strong>Medium:</strong> 4hr response, 24hr resolution, 99.5% uptime</li>
+                        <li><i class="fas fa-arrow-right"></i> <strong>Low:</strong> 8hr response, 5 days resolution, 99% uptime</li>
+                        <li><i class="fas fa-arrow-right"></i> SLA compensation for breaches</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">99.9%</span><span class="stat-label">Minimum Uptime</span></div>
+                      <div class="stat-box"><span class="stat-number">15min</span><span class="stat-label">Critical Response</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recognitions -->
+        <section class="recognitions section-padding bg-light" id="support-detail-recognitions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Recognitions</span>
+              <h2 class="section-title">Industry Recognition &amp; Awards</h2>
+              <p class="section-description">
+                Our support excellence has been recognized by leading industry analysts and organizations.
+              </p>
+            </div>
+            <div class="recognition-grid">
+              <div class="recognition-card" data-aos="zoom-in">
+                <div class="recognition-icon"><i class="fas fa-trophy"></i></div>
+                <h4>Gartner Cool Vendor</h4>
+                <p>Digital Transformation Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="recognition-icon"><i class="fas fa-award"></i></div>
+                <h4>Forrester Wave Leader</h4>
+                <p>Strategic Advisory Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="recognition-icon"><i class="fas fa-star"></i></div>
+                <h4>IDC MarketScape Leader</h4>
+                <p>Business Consulting Excellence</p>
+                <span class="year">2023</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="recognition-icon"><i class="fas fa-medal"></i></div>
+                <h4>Best Advisory Firm</h4>
+                <p>Technology Consulting Awards</p>
+                <span class="year">2023</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners section-padding" id="support-detail-partners">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Strategic Partners</span>
+              <h2 class="section-title">Powered by Industry-Leading Partnerships</h2>
+              <p class="section-description">
+                We collaborate with technology leaders to deliver best-in-class support solutions.
+              </p>
+            </div>
+            <div class="partners-grid">
+              <div class="partner-item" data-aos="fade-up">
+                <div class="partner-logo"><i class="fab fa-microsoft"></i></div>
+                <h4>Microsoft</h4>
+                <p>Gold Partner - Azure &amp; Dynamics</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-logo"><i class="fab fa-aws"></i></div>
+                <h4>AWS</h4>
+                <p>Advanced Consulting Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo"><i class="fab fa-google"></i></div>
+                <h4>Google Cloud</h4>
+                <p>Premier Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-logo"><i class="fas fa-cloud"></i></div>
+                <h4>Salesforce</h4>
+                <p>Platinum Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-logo"><i class="fas fa-database"></i></div>
+                <h4>SAP</h4>
+                <p>Gold Implementation Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="partner-logo"><i class="fas fa-server"></i></div>
+                <h4>Oracle</h4>
+                <p>Platinum Partner</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Insights -->
+        <section class="insights section-padding bg-light" id="support-detail-insights">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Insights</span>
+              <h2 class="section-title">Latest Thinking &amp; Research</h2>
+              <p class="section-description">
+                Stay informed with our latest insights on support best practices and operational excellence.
+              </p>
+            </div>
+            <div class="insights-grid">
+              <div class="insight-card" data-aos="fade-up">
+                <div class="insight-image"><div class="insight-category">Whitepaper</div></div>
+                <div class="insight-content">
+                  <h3>Support Best Practices Guide</h3>
+                  <p>Comprehensive guide to maximizing the value of enterprise support services and building effective support strategies.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="insight-image"><div class="insight-category">Case Study</div></div>
+                <div class="insight-content">
+                  <h3>99.99% Uptime: Global E-commerce Success</h3>
+                  <p>How our Enterprise Support helped a major retailer achieve 99.99% uptime during Black Friday with zero revenue-impacting incidents.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="insight-image"><div class="insight-category">Blog</div></div>
+                <div class="insight-content">
+                  <h3>Proactive Monitoring ROI Study</h3>
+                  <p>Data-driven analysis showing how proactive monitoring reduces incidents by 70% and saves companies an average of $2M annually.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -2227,6 +2630,51 @@
 
       if (techCloseBtn) {
         techCloseBtn.addEventListener('click', hideTechPanel);
+      }
+    })();
+
+    (function setupSupportDetailPanel() {
+      var supportCards = document.querySelectorAll('[data-support-card]');
+      var supportPanel = document.getElementById('support-detail-panel');
+      var supportCloseBtn = document.querySelector('[data-support-close]');
+
+      function showSupportPanel(scrollTargetId) {
+        if (!supportPanel) return;
+        supportPanel.removeAttribute('hidden');
+        supportPanel.setAttribute('aria-hidden', 'false');
+        supportPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (scrollTargetId) {
+          var targetSection = document.getElementById(scrollTargetId);
+          if (targetSection) {
+            setTimeout(function () {
+              targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 400);
+          }
+        }
+      }
+
+      function hideSupportPanel() {
+        if (!supportPanel) return;
+        supportPanel.setAttribute('hidden', '');
+        supportPanel.setAttribute('aria-hidden', 'true');
+      }
+
+      supportCards.forEach(function (supportCard) {
+        supportCard.addEventListener('click', function () {
+          var scrollTargetId = supportCard.getAttribute('data-support-scroll');
+          showSupportPanel(scrollTargetId);
+        });
+        supportCard.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            var scrollTargetId = supportCard.getAttribute('data-support-scroll');
+            showSupportPanel(scrollTargetId);
+          }
+        });
+      });
+
+      if (supportCloseBtn) {
+        supportCloseBtn.addEventListener('click', hideSupportPanel);
       }
     })();
 
