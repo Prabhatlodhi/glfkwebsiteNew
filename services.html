@@ -1121,11 +1121,414 @@
           <!-- <a class="btn btn-ghost" href="solutions.html">Explore solutions</a> -->
        
         </div>
-        <div class="grid-3">
-          <article class="card reveal"><div class="badge">Assessment</div><h3>Platform Assessment</h3><p>Evaluate architecture, security, cost, and performance for next-stage growth.</p></article>
-          <article class="card reveal"><div class="badge">Analytics</div><h3>Advanced Analytics</h3><p>Predictive and prescriptive analytics using AI/ML and modern data stacks.</p></article>
-          <article class="card reveal genai-card" data-genai-card role="button" tabindex="0"><div class="badge">GenAI</div><h3>Generative AI</h3><p>Use-case discovery, guardrails, and production-grade deployments.</p></article>
+        <div class="grid-6" id="technology-cards-grid">
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-value-proposition" role="button" tabindex="0"><div class="badge">Value Proposition</div><h3>Transform with Data, AI &amp; Generative Intelligence</h3><p>Our technology consulting leverages cutting-edge AI, machine learning, and data engineering to deliver intelligent solutions.</p></article>
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-capabilities" role="button" tabindex="0"><div class="badge">Capabilities</div><h3>Comprehensive Data, AI &amp; ML Capabilities</h3><p>End-to-end data and AI services from strategy to deployment, covering modern data platforms and generative AI.</p></article>
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-solutions" role="button" tabindex="0"><div class="badge">Solutions</div><h3>AI &amp; ML Solutions Across Industries</h3><p>Industry-specific data and AI solutions delivering measurable business impact across sectors.</p></article>
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-recognitions" role="button" tabindex="0"><div class="badge">Recognitions</div><h3>Industry Recognition &amp; Awards</h3><p>Our technology excellence has been recognized by leading industry analysts and organizations.</p></article>
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-partners" role="button" tabindex="0"><div class="badge">Strategic Partners</div><h3>Powered by Industry-Leading Partnerships</h3><p>We collaborate with technology leaders to deliver best-in-class data and AI solutions.</p></article>
+          <article class="card reveal" data-tech-card data-tech-scroll="tech-detail-insights" role="button" tabindex="0"><div class="badge">Insights</div><h3>Latest Thinking &amp; Research</h3><p>Stay informed with our latest insights on data, AI, and generative intelligence.</p></article>
         </div>
+      </div>
+    </section>
+
+    <!-- Technology Consulting detail panel (shown on Technology section card click) -->
+    <section class="service-content advisory-detail-panel technology-detail-panel" id="technology-detail-panel" aria-hidden="true" hidden>
+      <div class="advisory-detail-content">
+        <section class="service-hero">
+          <div class="service-hero-background">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="container">
+            <div class="advisory-hero-top">
+              <span></span>
+              <button type="button" class="btn btn-ghost genai-detail-close" data-tech-close aria-label="Close Technology details">Close <i class="fas fa-times"></i></button>
+            </div>
+            <div class="service-hero-content">
+              <h1 class="service-hero-title">Technology Consulting</h1>
+              <p class="service-hero-subtitle">Harness the Power of Data, AI, and Generative Intelligence</p>
+              <p class="service-hero-description">
+                Transform your business with advanced data engineering, machine learning, and generative AI solutions
+                that unlock insights, automate processes, and create competitive advantages.
+              </p>
+              <a href="#connect" class="btn btn-primary btn-large">
+                Schedule a Consultation
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="value-proposition section-padding" id="tech-detail-value-proposition">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Value Proposition</span>
+              <h2 class="section-title">Transform with Data, AI &amp; Generative Intelligence</h2>
+              <p class="section-description">
+                Our technology consulting services leverage cutting-edge AI, machine learning, and data engineering
+                to deliver intelligent solutions that drive business growth and operational excellence.
+              </p>
+            </div>
+            <div class="value-grid">
+              <div class="value-card" data-aos="fade-up">
+                <div class="value-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI-First Strategy</h3>
+                <p>Transform operations with intelligent automation, machine learning models, and generative AI that augments human decision-making and drives efficiency.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-icon"><i class="fas fa-database"></i></div>
+                <h3>Data-Driven Decisions</h3>
+                <p>Turn vast amounts of data into actionable insights with advanced analytics, predictive models, and real-time intelligence platforms.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Competitive Advantage</h3>
+                <p>Stay ahead with cutting-edge AI/ML solutions, generative AI applications, and data innovations that differentiate you from competitors.</p>
+              </div>
+              <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>Responsible AI</h3>
+                <p>Ethical, transparent, and compliant AI implementations with built-in governance, explainability, and bias mitigation frameworks.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="capabilities section-padding bg-light" id="tech-detail-capabilities">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Capabilities</span>
+              <h2 class="section-title">Comprehensive Data, AI &amp; ML Capabilities</h2>
+              <p class="section-description">
+                End-to-end data and AI services from strategy to deployment, covering modern data platforms, advanced analytics, machine learning, and generative AI.
+              </p>
+            </div>
+            <div class="capabilities-grid">
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-server"></i></div>
+                  <h3>Data Engineering &amp; Platform</h3>
+                </div>
+                <p>Build modern, scalable data platforms with real-time streaming, data lakes, warehouses, and robust governance frameworks.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Modern data architecture design</li>
+                  <li><i class="fas fa-check-circle"></i> Data lake and warehouse implementation</li>
+                  <li><i class="fas fa-check-circle"></i> Real-time streaming pipelines</li>
+                  <li><i class="fas fa-check-circle"></i> Data governance and quality management</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-chart-area"></i></div>
+                  <h3>Advanced Analytics</h3>
+                </div>
+                <p>Transform data into insights with predictive analytics, statistical modeling, and self-service BI platforms.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Predictive analytics models</li>
+                  <li><i class="fas fa-check-circle"></i> Statistical analysis and forecasting</li>
+                  <li><i class="fas fa-check-circle"></i> Business intelligence solutions</li>
+                  <li><i class="fas fa-check-circle"></i> Self-service analytics platforms</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-robot"></i></div>
+                  <h3>Machine Learning &amp; AI</h3>
+                </div>
+                <p>Custom ML model development for computer vision, NLP, recommendations, anomaly detection, and time series forecasting.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Custom ML model development</li>
+                  <li><i class="fas fa-check-circle"></i> Computer vision solutions</li>
+                  <li><i class="fas fa-check-circle"></i> Natural language processing</li>
+                  <li><i class="fas fa-check-circle"></i> Recommendation and forecasting systems</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-comments"></i></div>
+                  <h3>Generative AI Solutions</h3>
+                </div>
+                <p>Leverage GPT, LLMs, and generative AI for intelligent chatbots, content generation, code assistance, and document intelligence.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Large Language Model (LLM) integration</li>
+                  <li><i class="fas fa-check-circle"></i> Custom GPT applications</li>
+                  <li><i class="fas fa-check-circle"></i> AI chatbots and virtual assistants</li>
+                  <li><i class="fas fa-check-circle"></i> Content and code generation</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-right">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-cog"></i></div>
+                  <h3>MLOps &amp; AI Governance</h3>
+                </div>
+                <p>Enterprise-grade ML lifecycle management with automated pipelines, monitoring, and ethical AI governance frameworks.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> ML model lifecycle management</li>
+                  <li><i class="fas fa-check-circle"></i> Automated training pipelines</li>
+                  <li><i class="fas fa-check-circle"></i> Model monitoring and drift detection</li>
+                  <li><i class="fas fa-check-circle"></i> AI ethics and bias mitigation</li>
+                </ul>
+              </div>
+              <div class="capability-item" data-aos="fade-left">
+                <div class="capability-header">
+                  <div class="capability-icon"><i class="fas fa-flask"></i></div>
+                  <h3>Data Science Consulting</h3>
+                </div>
+                <p>Strategic data science consulting including use case identification, POC development, and team capability building.</p>
+                <ul class="capability-list">
+                  <li><i class="fas fa-check-circle"></i> Use case identification and prioritization</li>
+                  <li><i class="fas fa-check-circle"></i> Proof of concept development</li>
+                  <li><i class="fas fa-check-circle"></i> Algorithm selection and optimization</li>
+                  <li><i class="fas fa-check-circle"></i> Data science team capability building</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="solutions section-padding" id="tech-detail-solutions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Solutions</span>
+              <h2 class="section-title">AI &amp; ML Solutions Across Industries</h2>
+              <p class="section-description">
+                Industry-specific data and AI solutions delivering measurable business impact across sectors.
+              </p>
+            </div>
+            <div class="solutions-tabs">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="tech-financial">Financial Services</button>
+                <button class="tab-btn" data-tab="tech-healthcare">Healthcare &amp; Life Sciences</button>
+                <button class="tab-btn" data-tab="tech-retail">Retail &amp; E-commerce</button>
+                <button class="tab-btn" data-tab="tech-manufacturing">Manufacturing &amp; IoT</button>
+                <button class="tab-btn" data-tab="tech-genai">Generative AI</button>
+              </div>
+              <div class="tabs-content">
+                <div class="tab-panel active" id="tech-financial">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Financial Services AI &amp; Analytics</h3>
+                      <p>Advanced ML models for credit risk, fraud detection, algorithmic trading, and customer intelligence in banking and finance.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Credit risk modeling and scoring</li>
+                        <li><i class="fas fa-arrow-right"></i> Real-time fraud detection with ML</li>
+                        <li><i class="fas fa-arrow-right"></i> Algorithmic trading systems</li>
+                        <li><i class="fas fa-arrow-right"></i> Customer analytics and churn prediction</li>
+                        <li><i class="fas fa-arrow-right"></i> Regulatory compliance automation</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">85%</span><span class="stat-label">Fraud Detection Accuracy</span></div>
+                      <div class="stat-box"><span class="stat-number">30%</span><span class="stat-label">Faster Credit Decisions</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="tech-healthcare">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Healthcare AI &amp; Medical Analytics</h3>
+                      <p>AI-powered solutions for disease prediction, drug discovery, medical imaging analysis, and patient risk stratification.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Disease prediction models</li>
+                        <li><i class="fas fa-arrow-right"></i> Medical imaging AI (radiology, pathology)</li>
+                        <li><i class="fas fa-arrow-right"></i> Drug discovery and clinical trials optimization</li>
+                        <li><i class="fas fa-arrow-right"></i> Patient risk stratification</li>
+                        <li><i class="fas fa-arrow-right"></i> Healthcare operations optimization</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">92%</span><span class="stat-label">Diagnostic Accuracy</span></div>
+                      <div class="stat-box"><span class="stat-number">40%</span><span class="stat-label">Faster Drug Discovery</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="tech-retail">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Retail AI &amp; Customer Intelligence</h3>
+                      <p>ML-powered demand forecasting, dynamic pricing, recommendation engines, and customer segmentation for retail excellence.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Demand forecasting and inventory optimization</li>
+                        <li><i class="fas fa-arrow-right"></i> Dynamic pricing with ML</li>
+                        <li><i class="fas fa-arrow-right"></i> Personalized recommendation engines</li>
+                        <li><i class="fas fa-arrow-right"></i> Customer segmentation and targeting</li>
+                        <li><i class="fas fa-arrow-right"></i> Visual search and product discovery</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">25%</span><span class="stat-label">Revenue Increase</span></div>
+                      <div class="stat-box"><span class="stat-number">95%</span><span class="stat-label">Forecast Accuracy</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="tech-manufacturing">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Smart Manufacturing &amp; IoT Analytics</h3>
+                      <p>Predictive maintenance, quality prediction, supply chain optimization, and yield improvement through AI and IoT.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Predictive maintenance with IoT sensors</li>
+                        <li><i class="fas fa-arrow-right"></i> Quality prediction and defect detection</li>
+                        <li><i class="fas fa-arrow-right"></i> Supply chain optimization with ML</li>
+                        <li><i class="fas fa-arrow-right"></i> Yield optimization and process control</li>
+                        <li><i class="fas fa-arrow-right"></i> Digital twin simulations</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">30%</span><span class="stat-label">Production Efficiency</span></div>
+                      <div class="stat-box"><span class="stat-number">25%</span><span class="stat-label">Downtime Reduction</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-panel" id="tech-genai">
+                  <div class="solution-content">
+                    <div class="solution-text">
+                      <h3>Generative AI Applications</h3>
+                      <p>Enterprise GenAI solutions including intelligent search, content generation, code assistance, and conversational AI.</p>
+                      <ul class="solution-list">
+                        <li><i class="fas fa-arrow-right"></i> Enterprise search with RAG (Retrieval Augmented Generation)</li>
+                        <li><i class="fas fa-arrow-right"></i> Automated content creation and summarization</li>
+                        <li><i class="fas fa-arrow-right"></i> AI-powered code generation and assistance</li>
+                        <li><i class="fas fa-arrow-right"></i> Intelligent chatbots and virtual agents</li>
+                        <li><i class="fas fa-arrow-right"></i> Document intelligence and processing</li>
+                      </ul>
+                    </div>
+                    <div class="solution-stats">
+                      <div class="stat-box"><span class="stat-number">70%</span><span class="stat-label">Productivity Gain</span></div>
+                      <div class="stat-box"><span class="stat-number">80%</span><span class="stat-label">Faster Content Creation</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recognitions -->
+        <section class="recognitions section-padding bg-light" id="tech-detail-recognitions">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Recognitions</span>
+              <h2 class="section-title">Industry Recognition &amp; Awards</h2>
+              <p class="section-description">
+                Our technology excellence has been recognized by leading industry analysts and organizations.
+              </p>
+            </div>
+            <div class="recognition-grid">
+              <div class="recognition-card" data-aos="zoom-in">
+                <div class="recognition-icon"><i class="fas fa-trophy"></i></div>
+                <h4>Gartner Cool Vendor</h4>
+                <p>Digital Transformation Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="recognition-icon"><i class="fas fa-award"></i></div>
+                <h4>Forrester Wave Leader</h4>
+                <p>Strategic Advisory Services</p>
+                <span class="year">2024</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="recognition-icon"><i class="fas fa-star"></i></div>
+                <h4>IDC MarketScape Leader</h4>
+                <p>Business Consulting Excellence</p>
+                <span class="year">2023</span>
+              </div>
+              <div class="recognition-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="recognition-icon"><i class="fas fa-medal"></i></div>
+                <h4>Best Advisory Firm</h4>
+                <p>Technology Consulting Awards</p>
+                <span class="year">2023</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners section-padding" id="tech-detail-partners">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Strategic Partners</span>
+              <h2 class="section-title">Powered by Industry-Leading Partnerships</h2>
+              <p class="section-description">
+                We collaborate with technology leaders to deliver best-in-class data and AI solutions.
+              </p>
+            </div>
+            <div class="partners-grid">
+              <div class="partner-item" data-aos="fade-up">
+                <div class="partner-logo"><i class="fab fa-microsoft"></i></div>
+                <h4>Microsoft</h4>
+                <p>Gold Partner - Azure &amp; Dynamics</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-logo"><i class="fab fa-aws"></i></div>
+                <h4>AWS</h4>
+                <p>Advanced Consulting Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo"><i class="fab fa-google"></i></div>
+                <h4>Google Cloud</h4>
+                <p>Premier Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-logo"><i class="fas fa-cloud"></i></div>
+                <h4>Salesforce</h4>
+                <p>Platinum Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-logo"><i class="fas fa-database"></i></div>
+                <h4>SAP</h4>
+                <p>Gold Implementation Partner</p>
+              </div>
+              <div class="partner-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="partner-logo"><i class="fas fa-server"></i></div>
+                <h4>Oracle</h4>
+                <p>Platinum Partner</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Insights -->
+        <section class="insights section-padding bg-light" id="tech-detail-insights">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Insights</span>
+              <h2 class="section-title">Latest Thinking &amp; Research</h2>
+              <p class="section-description">
+                Stay informed with our latest insights on data, AI, and generative intelligence.
+              </p>
+            </div>
+            <div class="insights-grid">
+              <div class="insight-card" data-aos="fade-up">
+                <div class="insight-image"><div class="insight-category">Whitepaper</div></div>
+                <div class="insight-content">
+                  <h3>The State of Generative AI in Enterprise</h3>
+                  <p>Comprehensive report on how Fortune 500 companies are adopting GenAI, with implementation strategies and ROI analysis.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="insight-image"><div class="insight-category">Case Study</div></div>
+                <div class="insight-content">
+                  <h3>ML Model Deployment at Scale</h3>
+                  <p>How we helped a global retailer deploy 50+ ML models in production, handling 10M+ predictions daily with 99.9% uptime.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="insight-image"><div class="insight-category">Blog</div></div>
+                <div class="insight-content">
+                  <h3>Building Responsible AI Systems</h3>
+                  <p>Best practices for ethical AI development, bias mitigation, explainability, and AI governance frameworks.</p>
+                  <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -1779,6 +2182,51 @@
 
       if (advisoryCloseBtn) {
         advisoryCloseBtn.addEventListener('click', hideAdvisoryPanel);
+      }
+    })();
+
+    (function setupTechnologyDetailPanel() {
+      var techCards = document.querySelectorAll('[data-tech-card]');
+      var techPanel = document.getElementById('technology-detail-panel');
+      var techCloseBtn = document.querySelector('[data-tech-close]');
+
+      function showTechPanel(scrollTargetId) {
+        if (!techPanel) return;
+        techPanel.removeAttribute('hidden');
+        techPanel.setAttribute('aria-hidden', 'false');
+        techPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (scrollTargetId) {
+          var targetSection = document.getElementById(scrollTargetId);
+          if (targetSection) {
+            setTimeout(function () {
+              targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 400);
+          }
+        }
+      }
+
+      function hideTechPanel() {
+        if (!techPanel) return;
+        techPanel.setAttribute('hidden', '');
+        techPanel.setAttribute('aria-hidden', 'true');
+      }
+
+      techCards.forEach(function (techCard) {
+        techCard.addEventListener('click', function () {
+          var scrollTargetId = techCard.getAttribute('data-tech-scroll');
+          showTechPanel(scrollTargetId);
+        });
+        techCard.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            var scrollTargetId = techCard.getAttribute('data-tech-scroll');
+            showTechPanel(scrollTargetId);
+          }
+        });
+      });
+
+      if (techCloseBtn) {
+        techCloseBtn.addEventListener('click', hideTechPanel);
       }
     })();
 
