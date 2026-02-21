@@ -2683,6 +2683,8 @@ textarea:focus {
   background: #f7f7f7;
   border-radius: 18px;
   padding: 28px 26px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .shared-grid {
@@ -2694,7 +2696,7 @@ textarea:focus {
 
 .shared-heading h2 {
   margin: 0 0 10px;
-  font-size: clamp(20px, 2.4vw, 26px);
+  font-size: clamp(30px, 3vw, 36px);
   line-height: 1.25;
   color: var(--c-blue-900);
 }
@@ -2723,7 +2725,7 @@ textarea:focus {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 14px;
+  gap: 36px;
 }
 
 .shared-list li {
