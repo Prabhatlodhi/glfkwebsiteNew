@@ -196,21 +196,21 @@ body {
   z-index: 1;
 }
 
-.breadcrumb {
+/* .breadcrumb {
   font-size: 13px;
   color: var(--c-muted);
   margin-bottom: 12px;
-}
+} */
 
-.breadcrumb a {
+/* .breadcrumb a {
   color: var(--c-muted);
   text-decoration: none;
   transition: color 0.2s ease;
-}
+} */
 
-.breadcrumb a:hover {
+/* .breadcrumb a:hover {
   color: var(--c-blue-900);
-}
+} */
 
 .service-title {
   font-family: 'Poppins', sans-serif;
