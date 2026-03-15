@@ -2574,6 +2574,111 @@ textarea:focus {
   line-height: 1.3;
 }
 
+/* Industry Recognition & Awards Section */
+.awards-section {
+  padding: 72px 0 80px;
+  background: #fff;
+}
+
+.awards-heading {
+  font-size: clamp(26px, 3.6vw, 40px);
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 12px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.awards-sub {
+  font-size: 14px;
+  color: var(--c-muted);
+  margin: 0 0 40px;
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 980px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.award-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09);
+}
+
+.award-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(var(--c-blue-600-rgb), 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-blue-900);
+  flex-shrink: 0;
+}
+
+.award-title {
+  font-size: clamp(15px, 1.8vw, 17px);
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.award-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  margin-top: auto;
+  align-items: center;
+}
+
+.award-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 500;
+  background: var(--c-surface-2);
+  color: var(--c-muted);
+  border: 1px solid var(--c-border);
+  white-space: nowrap;
+}
+
+.award-tag-year {
+  background: rgba(var(--c-blue-600-rgb), 0.08);
+  color: var(--c-blue-900);
+  border-color: rgba(var(--c-blue-600-rgb), 0.18);
+  font-weight: 600;
+}
+
 /* Digital Infrastructure Section */
 .infra-section {
   padding: 72px 0 80px;
