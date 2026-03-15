@@ -276,12 +276,14 @@
 }
 
 .advisory-expertise-card:nth-child(1),
-.advisory-expertise-card:nth-child(4) {
+.advisory-expertise-card:nth-child(4),
+.advisory-expertise-card:nth-child(5) {
   background: #DFE3EB;
 }
 
 .advisory-expertise-card:nth-child(2),
-.advisory-expertise-card:nth-child(3) {
+.advisory-expertise-card:nth-child(3),
+.advisory-expertise-card:nth-child(6) {
   background: #F4F5F7;
 }
 
