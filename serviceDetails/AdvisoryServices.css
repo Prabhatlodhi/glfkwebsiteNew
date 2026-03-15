@@ -2,7 +2,7 @@
 
 .advisory-hero {
   position: relative;
-  padding: 90px 0 80px;
+  padding: 40px 0px;
   overflow: hidden;
   text-align: center;
 }
@@ -71,4 +71,43 @@
 .advisory-hero .btn-schedule:hover {
   background: var(--c-blue-600);
   transform: translateY(-1px);
+}
+
+/* Intro Two-Column Section */
+.advisory-intro-section {
+  padding: 80px 0;
+  background: var(--c-surface);
+}
+
+.advisory-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.advisory-intro-left p {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  color: var(--c-blue-900);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.advisory-intro-right p {
+  font-size: 15px;
+  color: var(--c-muted);
+  line-height: 1.75;
+  margin: 0 0 20px;
+}
+
+.advisory-intro-right p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .advisory-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
