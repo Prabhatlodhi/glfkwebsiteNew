@@ -275,11 +275,13 @@
   padding: 32px 28px;
 }
 
-.advisory-expertise-card:nth-child(1) {
+.advisory-expertise-card:nth-child(1),
+.advisory-expertise-card:nth-child(4) {
   background: #DFE3EB;
 }
 
-.advisory-expertise-card:nth-child(2) {
+.advisory-expertise-card:nth-child(2),
+.advisory-expertise-card:nth-child(3) {
   background: #F4F5F7;
 }
 
