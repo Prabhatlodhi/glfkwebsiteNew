@@ -596,12 +596,22 @@
         card.addEventListener('click', function (event) {
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
+          var cardId = card.getAttribute('data-service-card');
+          if (cardId === 'advisory') {
+            window.location.href = 'serviceDetails/AdvisoryServices.html';
+            return;
+          }
           handleCardSelect();
         });
         card.addEventListener('keydown', function (event) {
           if (event.key !== 'Enter' && event.key !== ' ') return;
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
+          var cardId = card.getAttribute('data-service-card');
+          if (cardId === 'advisory') {
+            window.location.href = 'serviceDetails/AdvisoryServices.html';
+            return;
+          }
           handleCardSelect();
         });
       });
