@@ -2576,7 +2576,8 @@ textarea:focus {
 
 /* Industry Recognition & Awards Section */
 .awards-section {
-  padding: 72px 0 80px;
+  border: 2px solid red;
+  padding: 20px 0px;
   background: #fff;
 }
 
@@ -2592,8 +2593,7 @@ textarea:focus {
 .awards-sub {
   font-size: 14px;
   color: var(--c-muted);
-  margin: 0 0 40px;
-  max-width: 600px;
+  margin: 0 0 40px; 
   line-height: 1.65;
 }
 
@@ -4971,7 +4971,7 @@ textarea:focus {
   font-size: 14px;
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
   cursor: pointer;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .btn-secondary-outlined:hover {
