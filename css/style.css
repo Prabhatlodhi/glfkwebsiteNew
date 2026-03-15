@@ -2878,7 +2878,7 @@ textarea:focus {
 }
 
 .infra-header {
-  margin-bottom: 44px;
+  margin: 30px 0px;
 }
 
 .infra-header h2 {
@@ -2888,14 +2888,12 @@ textarea:focus {
   margin: 0 0 14px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  max-width: 640px;
 }
 
 .infra-header p {
   font-size: 15px;
   color: var(--c-muted);
   margin: 0;
-  max-width: 580px;
   line-height: 1.65;
 }
 
