@@ -111,3 +111,125 @@
     gap: 32px;
   }
 }
+
+/* Transform Section */
+.advisory-transform-section {
+  padding: 80px 0;
+  background: var(--c-surface);
+}
+
+.advisory-transform-header {
+  margin-bottom: 40px;
+}
+
+.advisory-transform-header h2 {
+  font-size: clamp(26px, 3.2vw, 40px);
+  font-weight: 700;
+  color: var(--c-blue-900);
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.advisory-transform-header p {
+  font-size: 15px;
+  color: var(--c-muted);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* Cards Row */
+.advisory-cards-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.advisory-tab-card {
+  position: relative;
+  padding: 36px 28px 40px;
+  cursor: pointer;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.advisory-tab-card:hover {
+  background: rgba(var(--c-blue-600-rgb), 0.03);
+}
+
+.advisory-tab-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  color: var(--c-muted);
+  background: var(--c-surface-2);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.advisory-tab-card.active .advisory-tab-icon {
+  background: var(--c-blue-900);
+  color: #fff;
+}
+
+.advisory-tab-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-blue-900);
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.advisory-tab-card p {
+  font-size: 13.5px;
+  color: var(--c-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Bottom active line */
+.advisory-tab-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--c-blue-900);
+  transition: width 0.3s ease;
+  border-radius: 2px 2px 0 0;
+}
+
+.advisory-tab-card.active .advisory-tab-underline {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .advisory-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advisory-tab-card:nth-child(2) {
+    border-right: none;
+  }
+  .advisory-tab-card:nth-child(1),
+  .advisory-tab-card:nth-child(2) {
+    border-bottom: 1px solid var(--c-border);
+  }
+}
+
+@media (max-width: 560px) {
+  .advisory-cards-row {
+    grid-template-columns: 1fr;
+  }
+  .advisory-tab-card {
+    border-right: none;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .advisory-tab-card:last-child {
+    border-bottom: none;
+  }
+}
