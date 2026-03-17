@@ -84,7 +84,7 @@
             <li><span class="advisory-check" aria-hidden="true"></span>Rapid Prototyping Tools</li>
             <li><span class="advisory-check" aria-hidden="true"></span>Integration Accelerators</li>
           </ul>
-          <a href="serviceDetails/ProductsandAccelerators.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
+          <a href="serviceDetails/newServicePages/ProductsandAccelerators2.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
         <article class="service-card reveal" data-service-card="technology" data-scroll-target="#tech-consulting" role="button" tabindex="0">
@@ -99,7 +99,7 @@
             <li><span class="advisory-check" aria-hidden="true"></span>Generative AI Implementation</li>
             <li><span class="advisory-check" aria-hidden="true"></span>AI Strategy &amp; Governance</li>
           </ul>
-          <a href="serviceDetails/GenerativeAI.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
+          <a href="serviceDetails/newServicePages/TechnologyConsulting.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
 
         <article class="service-card reveal" data-service-card="support" data-scroll-target="#support" role="button" tabindex="0">
@@ -114,7 +114,7 @@
             <li><span class="advisory-check" aria-hidden="true"></span>Performance Optimization</li>
             <li><span class="advisory-check" aria-hidden="true"></span>Training &amp; Knowledge Transfer</li>
           </ul>
-          <a href="serviceDetails/CloudandInfrastructure.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
+          <a href="serviceDetails/newServicePages/SupportServices.html" class="btn btn-ghost" style="margin-top: 15px;">Learn More</a>
         </article>
         </div>
       </div>
@@ -593,12 +593,18 @@
           var newUrl = window.location.pathname + '?card=' + encodeURIComponent(cardId);
           window.history.replaceState({ card: cardId }, '', newUrl);
         }
+        var cardRedirectMap = {
+          advisory: 'serviceDetails/AdvisoryServices.html',
+          products: 'serviceDetails/newServicePages/ProductsandAccelerators2.html',
+          technology: 'serviceDetails/newServicePages/TechnologyConsulting.html',
+          support: 'serviceDetails/newServicePages/SupportServices.html'
+        };
         card.addEventListener('click', function (event) {
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
           var cardId = card.getAttribute('data-service-card');
-          if (cardId === 'advisory') {
-            window.location.href = 'serviceDetails/AdvisoryServices.html';
+          if (cardRedirectMap[cardId]) {
+            window.location.href = cardRedirectMap[cardId];
             return;
           }
           handleCardSelect();
@@ -608,8 +614,8 @@
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
           var cardId = card.getAttribute('data-service-card');
-          if (cardId === 'advisory') {
-            window.location.href = 'serviceDetails/AdvisoryServices.html';
+          if (cardRedirectMap[cardId]) {
+            window.location.href = cardRedirectMap[cardId];
             return;
           }
           handleCardSelect();
