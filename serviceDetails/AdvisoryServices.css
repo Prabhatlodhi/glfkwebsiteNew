@@ -485,3 +485,13 @@
     line-height: 1.6;
   }
 }
+
+/* Advisory-only override for shared product hero styles */
+.page-hero {
+  background: transparent;
+}
+
+.page-hero h1,
+.page-hero .lead {
+  text-align: left;
+}
