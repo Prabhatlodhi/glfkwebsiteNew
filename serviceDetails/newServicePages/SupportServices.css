@@ -1,0 +1,79 @@
+/* ── Support CTA Card ───────────────────────────────────────── */
+.support-cta-section {
+  padding: 48px 0 64px;
+}
+
+.support-cta-card {
+  padding: 52px 48px;
+  background:
+    radial-gradient(600px 260px at 85% -10%, rgba(99, 130, 255, 0.25), transparent 60%),
+    linear-gradient(135deg, #1a2e6e 0%, #2a3f96 60%, #3452b4 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  color: #fff;
+}
+
+.support-cta-card h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  margin: 0 0 14px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.support-cta-card p {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 28px;
+  max-width: 640px;
+}
+
+.support-cta-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.support-cta-btn-primary {
+  display: inline-block;
+  background: #1e3caa;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.support-cta-btn-primary:hover {
+  background: #162d85;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+}
+
+.support-cta-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.support-cta-btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 600px) {
+  .support-cta-card {
+    padding: 36px 24px;
+  }
+}
