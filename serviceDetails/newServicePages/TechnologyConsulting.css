@@ -1,0 +1,78 @@
+/* What We Deliver Section */
+.what-we-deliver-section {
+  background: #f5f6f8;
+  padding: 50px 0;
+}
+
+.wwd-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 48px;
+}
+
+.wwd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wwd-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.wwd-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.wwd-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a5f;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.wwd-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.wwd-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .wwd-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .wwd-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wwd-heading {
+    font-size: 1.5rem;
+  }
+}
