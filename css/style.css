@@ -24,6 +24,7 @@
 
   /* HEX aliases (derived) */
   --c-blue-900: #002365;
+  --c-button-blue: #0046CB;
   --c-green-600: #4A9C02;
 
   --c-pink-600: #DA007B;
@@ -44,6 +45,9 @@
   --c-surface: #FFFFFF;
   --c-surface-2: #E7ECF3;
   --c-border: #E4EAF2;
+  --btn-learn-start: #002365;
+  --btn-learn-end: #0046CB;
+  --btn-learn-end-rgb: 0, 70, 203;
 
   /* Hero / page background (Figma) – use across app */
   --bg-hero-to-white: linear-gradient(135deg, #F7F9FC 0%, #E7ECF3 50%, #E0E6EF 100%);
@@ -997,6 +1001,105 @@ a .card {
   padding: 6px 10px;
   font-size: 12px;
   font-weight: 800;
+}
+
+/* ── Services page: 2-column main cards ─────────────────────────── */
+#services-cards-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 768px) {
+  #services-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Larger padding & heading for the 2-col cards */
+#services-cards-grid .service-card {
+  padding: 32px;
+}
+
+#services-cards-grid .service-card h3 {
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+/* Top row: pill tag on left, circular icon on right */
+.sc-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sc-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .06);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--c-muted);
+  white-space: nowrap;
+}
+
+/* Circular coloured icon */
+.sc-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sc-icon-circle img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.sc-icon-green  { background: var(--c-green-600); }
+.sc-icon-pink   { background: var(--c-pink-600); }
+.sc-icon-blue   { background: var(--c-blue-600); }
+.sc-icon-orange { background: var(--c-orange-600); }
+
+/* Divider below heading */
+.sc-divider {
+  border: none;
+  border-top: 1px solid var(--c-border);
+  margin: 0 0 16px;
+}
+
+/* Learn More button override — high specificity to beat ProductsandAccelerators.css */
+#services-cards-grid .service-card a.sc-learn-btn,
+#services-cards-grid .service-card a.sc-learn-btn:link,
+#services-cards-grid .service-card a.sc-learn-btn:visited {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 13px;
+  padding: 11px 22px;
+  border-radius: 2px;
+  color: #fff !important;
+  background: linear-gradient(90deg, #002365 0%, #0046CB 100%) !important;
+  border-color: transparent;
+  box-shadow: 0 10px 22px rgba(0, 35, 101, .18);
+}
+
+#services-cards-grid .service-card a.sc-learn-btn:hover {
+  background: linear-gradient(90deg, #001c54 0%, #0046CB 100%) !important;
+  box-shadow: 0 14px 28px rgba(0, 70, 203, .28);
+  color: #fff !important;
+}
+
+#services-cards-grid .advisory-card-list {
+  border-top: none;
+  margin-top: 0;
 }
 
 .badge {
