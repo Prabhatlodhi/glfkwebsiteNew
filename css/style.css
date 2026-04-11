@@ -1084,7 +1084,7 @@ a .card {
   margin-top: auto;
   font-size: 13px;
   padding: 11px 22px;
-  border-radius: 2px;
+  border-radius: 10px;
   color: #fff !important;
   background: linear-gradient(90deg, #002365 0%, #0046CB 100%) !important;
   border-color: transparent;
