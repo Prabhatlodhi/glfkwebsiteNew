@@ -73,7 +73,7 @@
             <li><span class="advisory-check" aria-hidden="true"></span>Technology Roadmap Planning</li>
             <li><span class="advisory-check" aria-hidden="true"></span>Risk Assessment &amp; Management</li>
           </ul>
-          <a href="" class="btn btn-primary sc-learn-btn">Learn More <span aria-hidden="true">&#x2197;</span></a>
+          <a href="serviceDetails/AdvisoryServices.html" class="btn btn-primary sc-learn-btn">Learn More <span aria-hidden="true">&#x2197;</span></a>
         </article>
 
         <article class="service-card reveal" data-service-card="products" data-scroll-target="#accelerators" role="button" tabindex="0">
@@ -130,7 +130,7 @@
             <li><span class="advisory-check" aria-hidden="true"></span>Performance Optimization</li>
             <li><span class="advisory-check" aria-hidden="true"></span>Training &amp; Knowledge Transfer</li>
           </ul>
-          <a href="" class="btn btn-primary sc-learn-btn">Learn More <span aria-hidden="true">&#x2197;</span></a>
+          <a href="serviceDetails/newServicePages/SupportServices.html" class="btn btn-primary sc-learn-btn">Learn More <span aria-hidden="true">&#x2197;</span></a>
         </article>
         </div>
       </div>
@@ -618,22 +618,12 @@
         card.addEventListener('click', function (event) {
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
-          var cardId = card.getAttribute('data-service-card');
-          if (cardRedirectMap[cardId]) {
-            window.location.href = cardRedirectMap[cardId];
-            return;
-          }
           handleCardSelect();
         });
         card.addEventListener('keydown', function (event) {
           if (event.key !== 'Enter' && event.key !== ' ') return;
           if (event.target.closest('a.btn')) return;
           event.preventDefault();
-          var cardId = card.getAttribute('data-service-card');
-          if (cardRedirectMap[cardId]) {
-            window.location.href = cardRedirectMap[cardId];
-            return;
-          }
           handleCardSelect();
         });
       });
