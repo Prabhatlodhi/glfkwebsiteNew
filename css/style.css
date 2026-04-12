@@ -1174,7 +1174,7 @@ a .card {
   inset: -60px -60px auto auto;
   width: 160px;
   height: 160px;
-  background: radial-gradient(circle at 30% 30%, rgba(var(--c-pink-600-rgb), .18), transparent 60%);
+  background: none;
   transform: rotate(18deg);
 }
 
