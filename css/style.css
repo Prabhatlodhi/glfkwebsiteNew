@@ -121,7 +121,7 @@ a {
 
 /* ── Customer Impact Section ──────────────────────────────────── */
 .customer-impact-section {
-  padding: 30px 0px;
+  padding: 50px 0;
   background: #fff;
 }
 
@@ -1977,7 +1977,7 @@ a .card {
 
 /* Page header */
 .page-hero {
-  /* padding: 30px 12%; */
+  padding: 20px 0;
   background: var(--bg-hero-to-white-to-white);
 }
 
@@ -2848,7 +2848,7 @@ textarea:focus {
 
 /* Industry Recognition & Awards Section */
 .awards-section { 
-  padding: 20px 0px;
+  padding: 40px 0;
   background: #fff;
 }
 
@@ -2952,7 +2952,7 @@ textarea:focus {
 
 /* Partners Section */
 .partners-section {
-  padding: 60px 0 72px;
+  padding: 80px 0 92px;
   background: #fff;
 }
 
@@ -3042,7 +3042,7 @@ textarea:focus {
 
 /* Digital Infrastructure Section */
 .infra-section {
-  padding: 72px 0 80px;
+  padding: 92px 0 100px;
   background: #fff;
 }
 
@@ -4765,7 +4765,7 @@ textarea:focus {
 
 /* Blogs Section */
 .blogs-section {
-  padding: 40px 0px; 
+  padding: 60px 0; 
   background: var(--c-surface); 
 }
 
