@@ -2937,16 +2937,16 @@ textarea:focus {
   border-radius: 999px;
   font-size: 11.5px;
   font-weight: 500;
-  background: var(--c-surface-2);
-  color: var(--c-muted);
-  border: 1px solid var(--c-border);
+  background: rgba(var(--c-green-600-rgb), 0.10);
+  color: var(--c-green-600);
+  border: 1px solid rgba(var(--c-green-600-rgb), 0.28);
   white-space: nowrap;
 }
 
 .award-tag-year {
-  background: rgba(var(--c-blue-600-rgb), 0.08);
-  color: var(--c-blue-900);
-  border-color: rgba(var(--c-blue-600-rgb), 0.18);
+  background: rgba(var(--c-green-600-rgb), 0.12);
+  color: var(--c-blue-600);
+  border-color: rgba(var(--c-green-600-rgb), 0.35);
   font-weight: 600;
 }
 
