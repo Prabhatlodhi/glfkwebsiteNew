@@ -498,14 +498,14 @@
 .stat-number {
     display: block;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--c-blue-900);
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
     display: block;
-    color: var(--c-blue-900);
+    color: var(--c-text);
     font-size: 1.1rem;
     font-weight: 600;
 }
